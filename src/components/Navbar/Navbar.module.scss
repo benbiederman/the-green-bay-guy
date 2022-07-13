@@ -1,0 +1,153 @@
+@import "../../styles/_mixin.scss";
+@import "../../styles/_variables.scss";
+
+@media screen and (min-width: 100px) {
+  header {
+    width: 100%;
+    height: 10vh;
+    background-color: $black;
+    position: relative;
+    @include flex(row, center, center);
+    position: sticky;
+    top: 0;
+
+    img {
+      height: 9.5vh;
+    }
+  }
+
+  .skipBtn {
+    background-color: $brandingGreen;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-125%);
+    transition: transform 0.25s ease-in;
+    color: $white;
+    text-shadow: 0px 0px 8px $darkGray;
+    &:focus {
+      transform: translate(0%);
+    }
+  }
+
+  .navBtn {
+    background-color: transparent;
+    border: none;
+    color: $white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2.5vw;
+    &:hover {
+      color: $brandingGreen;
+    }
+  }
+
+  nav {
+    background-color: $black;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    color: $white;
+    transform: translateX(-150%);
+    transition: transform 0.5s ease;
+    width: 75%;
+    padding: 2.5vh 5vw;
+    height: 90vh;
+
+    ul {
+      @include flex(column, flex-start, space-evenly);
+    }
+
+    a {
+      list-style: none;
+      margin: 2.5vh 0;
+      font-size: 1.5rem;
+      display: inline;
+      padding: 0.25rem 0.5rem;
+      color: $white;
+      @include defaultHeader;
+      &:hover {
+        color: $brandingGreen;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .navActive {
+    transform: translateX(0%);
+  }
+}
+
+@media screen and (min-width: 300px) {
+  header {
+    height: 8vh;
+
+    img {
+      height: 7.5vh;
+    }
+  }
+
+  nav {
+    top: 8vh;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    a {
+      font-size: 1.75rem;
+      margin: 1.5vh 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    height: 8vh;
+    @include flex(row, center, center);
+
+    img {
+      height: 7.5vh;
+      left: 2vw;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      z-index: 2;
+    }
+  }
+
+  .skipBtn {
+    left: 8vw;
+  }
+
+  .navBtn {
+    display: none;
+  }
+
+  nav {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translateX(0%);
+    width: 45%;
+    padding: 0;
+    height: 8vh;
+
+    ul {
+      @include flex(row, flex-end, space-evenly);
+      height: 8vh;
+    }
+
+    a {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.25rem;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+
+  .navActive {
+    transform: translateX(0%);
+  }
+}

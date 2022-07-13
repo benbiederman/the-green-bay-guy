@@ -1,5 +1,9 @@
 const LocalsGuide = () => {
-  return <div></div>;
+  return (
+    <div>
+      <h1>Local's Guide</h1>
+    </div>
+  );
 };
 
 export default LocalsGuide;

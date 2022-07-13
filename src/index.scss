@@ -1,5 +1,35 @@
+@import "./styles/mixin";
+@import "./styles/variables";
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+@media screen and (min-width: 100px) {
+  button {
+    padding: 0.25rem 0.5rem;
+    font-size: 1.5rem;
+    @include defaultHeader;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  button {
+    padding: 0.25rem 0.5rem;
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  button {
+    font-size: 1.25rem;
+  }
 }

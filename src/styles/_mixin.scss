@@ -1,0 +1,17 @@
+@mixin flex($direction, $alignItems, $justifyContent) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
+
+@mixin defaultHeader {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@mixin defaultFont {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
