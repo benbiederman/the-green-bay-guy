@@ -1,8 +1,8 @@
 const Podcast = () => {
   return (
-    <div>
+    <main>
       <h1>Podcast</h1>
-    </div>
+    </main>
   );
 };
 

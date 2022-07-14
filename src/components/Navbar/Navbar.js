@@ -8,6 +8,7 @@ const Navbar = () => {
 
   function toggleNav() {
     setNavActive(!navActive);
+    window.scrollTo(0);
   }
 
   function closeNav(e) {

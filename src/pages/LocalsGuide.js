@@ -1,8 +1,8 @@
 const LocalsGuide = () => {
   return (
-    <div>
+    <main>
       <h1>Local's Guide</h1>
-    </div>
+    </main>
   );
 };
 

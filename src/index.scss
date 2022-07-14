@@ -12,6 +12,21 @@ a {
   color: $black;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include defaultHeader;
+}
+
+p,
+li,
+a {
+  @include defaultFont;
+}
+
 @media screen and (min-width: 100px) {
   button {
     padding: 0.25rem 0.5rem;
@@ -19,12 +34,30 @@ a {
     @include defaultHeader;
     cursor: pointer;
   }
+
+  main {
+    min-height: 84vh;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  p {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
   button {
     padding: 0.25rem 0.5rem;
     font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1.25rem;
   }
 }
 

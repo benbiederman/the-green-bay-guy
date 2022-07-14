@@ -14,6 +14,39 @@
     img {
       height: 9.5vh;
     }
+
+    nav {
+      background-color: $black;
+      position: absolute;
+      top: 10vh;
+      left: 0;
+      color: $white;
+      transform: translateX(-150%);
+      transition: transform 0.5s ease;
+      width: 75%;
+      padding: 2.5vh 5vw;
+      height: 90vh;
+
+      ul {
+        @include flex(column, flex-start, space-evenly);
+      }
+
+      a {
+        list-style: none;
+        margin: 2.5vh 0;
+        font-size: 1.5rem;
+        display: inline;
+        padding: 0.25rem 0.5rem;
+        color: $white;
+        display: none;
+        @include defaultHeader;
+        transition: color 0.25s ease;
+        &:hover {
+          color: $brandingGreen;
+          cursor: pointer;
+        }
+      }
+    }
   }
 
   .skipBtn {
@@ -43,39 +76,11 @@
     }
   }
 
-  nav {
-    background-color: $black;
-    position: absolute;
-    top: 10vh;
-    left: 0;
-    color: $white;
-    transform: translateX(-150%);
-    transition: transform 0.5s ease;
-    width: 75%;
-    padding: 2.5vh 5vw;
-    height: 90vh;
-
-    ul {
-      @include flex(column, flex-start, space-evenly);
-    }
-
-    a {
-      list-style: none;
-      margin: 2.5vh 0;
-      font-size: 1.5rem;
-      display: inline;
-      padding: 0.25rem 0.5rem;
-      color: $white;
-      @include defaultHeader;
-      &:hover {
-        color: $brandingGreen;
-        cursor: pointer;
-      }
-    }
-  }
-
   .navActive {
     transform: translateX(0%);
+    a {
+      display: block;
+    }
   }
 }
 
@@ -86,11 +91,12 @@
     img {
       height: 7.5vh;
     }
-  }
 
-  nav {
-    top: 8vh;
-    width: 60%;
+    nav {
+      top: 8vh;
+      width: 60%;
+      height: 92vh;
+    }
   }
 }
 
@@ -116,6 +122,28 @@
       position: absolute;
       z-index: 2;
     }
+
+    nav {
+      position: static;
+      top: 0;
+      left: 0;
+      transform: translateX(0%);
+      width: 45%;
+      padding: 0;
+      height: 8vh;
+
+      ul {
+        @include flex(row, flex-end, space-evenly);
+        height: 8vh;
+      }
+
+      a {
+        margin: 0 0 0.25rem 0;
+        font-size: 1.25rem;
+        padding: 0.25rem 0.5rem;
+        display: block;
+      }
+    }
   }
 
   .skipBtn {
@@ -124,27 +152,6 @@
 
   .navBtn {
     display: none;
-  }
-
-  nav {
-    position: static;
-    top: 0;
-    left: 0;
-    transform: translateX(0%);
-    width: 45%;
-    padding: 0;
-    height: 8vh;
-
-    ul {
-      @include flex(row, flex-end, space-evenly);
-      height: 8vh;
-    }
-
-    a {
-      margin: 0 0 0.25rem 0;
-      font-size: 1.25rem;
-      padding: 0.25rem 0.5rem;
-    }
   }
 
   .navActive {
