@@ -27,12 +27,32 @@ a {
   @include defaultFont;
 }
 
+.primary-btn {
+  color: $white;
+  background-color: $black;
+  &:hover {
+    color: $brandingGreen;
+  }
+}
+
+.secondary-btn {
+  color: $black;
+  background-color: $brandingGreen;
+}
+
+.primary-btn,
+.secondary-btn {
+  transition: color 0.25s ease;
+  border-radius: 5px;
+  @include defaultHeader;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 100px) {
-  button {
+  .primary-btn,
+  .secondary-btn {
     padding: 0.25rem 0.5rem;
-    font-size: 1.5rem;
-    @include defaultHeader;
-    cursor: pointer;
+    font-size: 1rem;
   }
 
   main {
@@ -45,15 +65,31 @@ a {
 }
 
 @media screen and (min-width: 300px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.75rem;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    font-size: 1.25rem;
+    padding: 0.25rem 1rem;
+  }
+
   p {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  button {
-    padding: 0.25rem 0.5rem;
-    font-size: 1.75rem;
+  .primary-btn,
+  .secondary-btn {
+    font-size: 1.5rem;
+    padding: 0.25rem 2rem;
   }
 
   p {
@@ -62,7 +98,8 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  button {
-    font-size: 1.25rem;
+  .primary-btn,
+  .secondary-btn {
+    padding: 0.5rem 2.5rem;
   }
 }

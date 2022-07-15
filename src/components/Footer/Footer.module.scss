@@ -13,6 +13,11 @@
     nav {
       display: none;
     }
+
+    p {
+      margin-top: 2.5vh;
+      font-size: 1rem;
+    }
   }
 
   .socials {
@@ -36,10 +41,6 @@
       width: 15%;
       margin: 0.5rem 0.25rem;
     }
-  }
-
-  p {
-    margin-top: 2.5vh;
   }
 }
 
@@ -85,6 +86,12 @@
         }
       }
     }
+
+    p {
+      width: 100%;
+      margin-top: 5vh;
+      font-size: 1rem;
+    }
   }
 
   .socials {
@@ -104,11 +111,5 @@
       max-width: 10%;
       margin: 0.5rem 0.25rem;
     }
-  }
-
-  p {
-    width: 100%;
-    margin-top: 5vh;
-    font-size: 1rem;
   }
 }

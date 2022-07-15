@@ -34,7 +34,7 @@
       a {
         list-style: none;
         margin: 2.5vh 0;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         display: inline;
         padding: 0.25rem 0.5rem;
         color: $white;
@@ -58,6 +58,7 @@
     transition: transform 0.25s ease-in;
     color: $white;
     text-shadow: 0px 0px 8px $darkGray;
+    font-size: 1.25rem;
     &:focus {
       transform: translate(0%);
     }
@@ -71,6 +72,7 @@
     top: 50%;
     transform: translateY(-50%);
     right: 2.5vw;
+    font-size: 1.25rem;
     &:hover {
       color: $brandingGreen;
     }
@@ -96,15 +98,29 @@
       top: 8vh;
       width: 60%;
       height: 92vh;
+
+      a {
+        font-size: 1.5rem;
+      }
+    }
+
+    .navBtn {
+      font-size: 1.5rem;
     }
   }
 }
 
 @media screen and (min-width: 768px) {
-  nav {
-    a {
+  header {
+    nav {
+      a {
+        font-size: 1.75rem;
+        margin: 1.5vh 0;
+      }
+    }
+
+    .navBtn {
       font-size: 1.75rem;
-      margin: 1.5vh 0;
     }
   }
 }

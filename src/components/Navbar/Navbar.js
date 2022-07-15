@@ -24,9 +24,15 @@ const Navbar = () => {
 
   return (
     <header>
-      <button className={styles.skipBtn}>Skip to content</button>
+      <button className={`${styles.skipBtn} secondary-btn`}>
+        Skip to content
+      </button>
       <img src={logo} alt="The Green Bay Guy logo" />
-      <button className={styles.navBtn} aria-label="Menu" onClick={toggleNav}>
+      <button
+        className={`${styles.navBtn} primary-btn`}
+        aria-label="Menu"
+        onClick={toggleNav}
+      >
         <span>{navActive ? "Close" : "Menu"}</span>
       </button>
       <nav className={navActive ? styles.navActive : null}>
