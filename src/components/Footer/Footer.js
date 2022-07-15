@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import styles from "./Footer.module.scss";
 import FacebookLogo from "../../images/social-media/facebook.png";
 import InstagramLogo from "../../images/social-media/instagram.png";
@@ -7,24 +8,19 @@ import SnapchatLogo from "../../images/social-media/snapchat.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();
+  const location = useLocation();
 
-  function onLinkClick() {
-    window.scrollTo(0);
-  }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <footer>
       <nav>
         <ul>
-          <NavLink to="/" onClick={onLinkClick}>
-            Home
-          </NavLink>
-          <NavLink to="/locals-guide" onClick={onLinkClick}>
-            Local's Guide
-          </NavLink>
-          <NavLink to="/podcast" onClick={onLinkClick}>
-            Podcast
-          </NavLink>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/locals-guide">Local's Guide</NavLink>
+          <NavLink to="/podcast">Podcast</NavLink>
         </ul>
       </nav>
       {/* Social Media Icons*/}

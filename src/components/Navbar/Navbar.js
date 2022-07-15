@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../images/logo.png";
 import styles from "../Navbar/Navbar.module.scss";
+import { useLocation } from "react-router";
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
+  const location = useLocation();
 
   function toggleNav() {
     setNavActive(!navActive);
-    window.scrollTo(0);
   }
 
   function closeNav(e) {
@@ -16,6 +17,10 @@ const Navbar = () => {
       setNavActive(false);
     }
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <header>
