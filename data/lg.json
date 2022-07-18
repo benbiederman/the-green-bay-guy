@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "Legend Larry's",
+      "image": "legend-larrys.jpg",
+      "body": "Test Data",
+      "id": "legend-larrys"
+    },
+    {
+      "title": "Rustique Pizza",
+      "image": "../public/images/locals-guide/eat/lunch/rustique-pizza.jpg",
+      "body": "Test Data",
+      "id": "rustique-pizza"
+    },
+    {
+      "title": "Green Tea Chinese",
+      "image": "../public/images/locals-guide/eat/lunch/green-tea-chinese.jpg",
+      "body": "Test Data",
+      "id": "green-tea-chinese"
+    }
+  ]
+}
