@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const LandingPage = () => {
   return (
     <section className={styles.landingPage}>
+      <div className={styles.landingGradient}></div>
       <h2>Explore like a local.</h2>
       <p>
         Know the go-to places to eat, drink, and things to do in Green Bay,
