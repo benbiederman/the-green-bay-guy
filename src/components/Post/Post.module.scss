@@ -1,0 +1,87 @@
+@import "../../styles/_mixin.scss";
+@import "../../styles/_variables.scss";
+
+@media screen and (min-width: 100px) {
+  .post {
+    background-color: $white;
+    width: 100%;
+    margin: 2.5vh auto;
+    border-radius: 5px;
+    color: $black;
+    box-shadow: 0px 0px 10px $black;
+    cursor: pointer;
+
+    img {
+      width: 95%;
+      margin: 2.5% auto 0;
+    }
+
+    h1 {
+      width: 90%;
+      margin: 0 auto;
+      line-height: 1;
+    }
+
+    p:first-of-type {
+      font-size: 1rem;
+    }
+
+    p:last-of-type {
+      margin-top: 1.25vh;
+      font-size: 0.9rem;
+    }
+
+    &:hover p:last-of-type,
+    &:focus p:last-of-type {
+      color: $darkGreen;
+    }
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .post {
+    p:first-of-type {
+      font-size: 1.25rem;
+    }
+
+    p:last-of-type {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .post {
+    width: 47.5%;
+    margin: 1.25vh auto;
+
+    h1 {
+      margin-bottom: 0.25vh;
+    }
+
+    p:first-of-type {
+      font-size: 1.25rem;
+    }
+
+    p:last-of-type {
+      margin-top: 0.75vh;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .post {
+    width: 24%;
+    margin: 2.5vh auto;
+
+    &:hover h1,
+    &:focus h1 {
+      color: $darkGreen;
+    }
+
+    p:last-of-type {
+      margin-top: 1.25vh;
+    }
+  }
+}

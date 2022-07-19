@@ -1,4 +1,5 @@
 import LandingPage from "../components/LandingPage/LandingPage";
+import PostSuggestion from "../components/PostSuggestion/PostSuggestion";
 import useFetch from "../hooks/useFetch";
 
 const Home = () => {
@@ -7,6 +8,10 @@ const Home = () => {
   return (
     <main>
       <LandingPage />
+      <PostSuggestion
+        color={"dark"}
+        header={"Coming to Green Bay? These may help."}
+      />
     </main>
   );
 };

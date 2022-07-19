@@ -10,6 +10,7 @@
     @include flex(row, center, center);
     position: sticky;
     top: 0;
+    z-index: 1000;
 
     img {
       height: 9.5vh;

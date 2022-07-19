@@ -16,7 +16,7 @@
 
     p {
       margin-top: 2.5vh;
-      font-size: 1rem;
+      font-size: 0.75rem;
     }
   }
 
@@ -48,6 +48,12 @@
   .socials {
     a {
       width: 10%;
+    }
+  }
+
+  footer {
+    p {
+      font-size: 1rem;
     }
   }
 }
@@ -90,7 +96,6 @@
     p {
       width: 100%;
       margin-top: 5vh;
-      font-size: 1rem;
     }
   }
 

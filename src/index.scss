@@ -48,6 +48,14 @@ a {
   cursor: pointer;
 }
 
+.dark {
+  background-color: $black;
+}
+
+.light {
+  background-color: $white;
+}
+
 @media screen and (min-width: 100px) {
   .primary-btn,
   .secondary-btn {
@@ -61,6 +69,11 @@ a {
 
   p {
     font-size: 1rem;
+  }
+
+  .section-container {
+    padding: 0 10%;
+    margin: 0 auto;
   }
 }
 
