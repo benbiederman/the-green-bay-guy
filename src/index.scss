@@ -58,6 +58,10 @@ a {
   color: $black;
 }
 
+.white {
+  background-color: $white;
+}
+
 @media screen and (min-width: 100px) {
   .primary-btn,
   .secondary-btn {
@@ -114,6 +118,15 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 2.5rem;
+  }
+
   .primary-btn,
   .secondary-btn {
     padding: 0.5rem 2.5rem;

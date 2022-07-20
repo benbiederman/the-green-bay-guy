@@ -16,6 +16,10 @@ const Home = () => {
       />
       <About color={"light"} />
       <Divider color={"dark"} />
+      <PostSuggestion
+        color={"light"}
+        header={"Some of my favorite places in Green Bay:"}
+      />
     </main>
   );
 };

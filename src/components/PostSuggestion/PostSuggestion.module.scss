@@ -2,7 +2,8 @@
 @import "../../styles/_variables.scss";
 
 @media screen and (min-width: 100px) {
-  .suggestion {
+  .suggestion,
+  .mainSuggestion {
     min-height: 50vh;
     text-align: center;
     padding: 2.5vh 10vw;
@@ -15,8 +16,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .suggestion {
-    padding: 5vh 10vw;
+  .suggestion,
+  .mainSuggestion {
     @include flex(row, center, space-evenly);
     flex-wrap: wrap;
 
@@ -25,14 +26,28 @@
       width: 100%;
     }
   }
+
+  .mainSuggestion {
+    padding: 5vh 10vw;
+  }
+
+  .suggestion {
+    padding: 2.5vh 10vw;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  .suggestion {
+  .mainSuggestion {
     padding: 10vh 5vw;
     h3 {
-      font-size: 2.5rem;
       margin-bottom: 5vh;
+    }
+  }
+
+  .suggestion {
+    padding: 2.5vh 5vw;
+    h3 {
+      margin-bottom: 2.5vh;
     }
   }
 }
