@@ -4,7 +4,6 @@
 @media screen and (min-width: 100px) {
   .suggestion {
     min-height: 50vh;
-    color: $white;
     text-align: center;
     padding: 2.5vh 10vw;
 
@@ -30,7 +29,7 @@
 
 @media screen and (min-width: 1024px) {
   .suggestion {
-    padding: 10vh 10vw;
+    padding: 10vh 5vw;
     h3 {
       font-size: 2.5rem;
       margin-bottom: 5vh;

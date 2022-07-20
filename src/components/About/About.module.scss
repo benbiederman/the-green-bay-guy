@@ -1,0 +1,68 @@
+@import "../../styles/mixin";
+@import "../../styles/variables";
+
+@media screen and (min-width: 100px) {
+  .about {
+    @include flex(column, center, space-evenly);
+    padding: 2.5vh 10vw;
+    img {
+      width: 100%;
+      border-radius: 5px;
+      margin: 2.5vh auto;
+      box-shadow: 0 0 10px $darkGray;
+    }
+  }
+
+  .aboutSection {
+    h3 {
+      margin: 2.5vh auto;
+      text-align: center;
+    }
+
+    p {
+      margin: 2.5vh auto;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 2.5vh 20vw;
+    img {
+      width: 75%;
+    }
+  }
+
+  .aboutSection {
+    h3 {
+      margin: 0 auto 2.5vh auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    @include flex(row, center, space-evenly);
+    padding: 2.5vh 10vw;
+    img {
+      width: 40%;
+      border-radius: 5px;
+      margin: 2.5vh 0;
+    }
+  }
+
+  .aboutSection {
+    width: 40%;
+
+    h3 {
+      margin: 2.5vh auto;
+      text-align: center;
+    }
+
+    p {
+      margin: 2.5vh auto;
+      line-height: 1.5;
+    }
+  }
+}
