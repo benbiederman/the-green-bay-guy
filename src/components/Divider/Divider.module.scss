@@ -1,0 +1,20 @@
+@media screen and (min-width: 100px) {
+  .divider {
+    width: 60%;
+    height: 2px;
+    border-radius: 5px;
+    margin: 2.5vh auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .divider {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .divider {
+    width: 40%;
+  }
+}

@@ -1,4 +1,5 @@
 import About from "../components/About/About";
+import Divider from "../components/Divider/Divider";
 import LandingPage from "../components/LandingPage/LandingPage";
 import PostSuggestion from "../components/PostSuggestion/PostSuggestion";
 import useFetch from "../hooks/useFetch";
@@ -14,6 +15,7 @@ const Home = () => {
         header={"Coming to Green Bay? These may help."}
       />
       <About color={"light"} />
+      <Divider color={"dark"} />
     </main>
   );
 };
