@@ -80,6 +80,7 @@
     &:hover h1,
     &:focus h1 {
       color: $darkGreen;
+      text-decoration: underline;
     }
 
     p:last-of-type {
