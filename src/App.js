@@ -27,6 +27,10 @@ function App() {
           path="/locals-guide/do"
           element={<LocalsGuidePage greeting="Do Suggestions" />}
         />
+        <Route
+          path="/locals-guide/misc"
+          element={<LocalsGuidePage greeting="Misc Suggestions" />}
+        />
         <Route path="/podcast" element={<Podcast />} />
         <Route path="/locals-guide/:id" element={<LocalsGuidePost />} />
         <Route path="*" element={<NotFound />} />

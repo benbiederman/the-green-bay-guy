@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+@import "../../styles/mixin";
+
+@media screen and (min-width: 100px) {
+  .lgNavItem {
+    width: 100%;
+    min-height: 20vh;
+    color: $white;
+    @include flex(row, center, center);
+    cursor: pointer;
+    &:hover h3,
+    &:focus h3 {
+      color: $brandingGreen;
+    }
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .lgNavItem {
+    h3 {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .lgNavItem {
+    min-height: 84vh;
+    width: 25vw;
+    &:focus {
+      outline: none;
+    }
+    h3 {
+      font-size: 3.5rem;
+    }
+  }
+}

@@ -62,6 +62,30 @@ a {
   background-color: $white;
 }
 
+.eatBackground,
+.drinkBackground,
+.doBackground,
+.miscBackground {
+  background-position: center;
+  background-size: cover;
+}
+
+.eatBackground {
+  background-image: url("./images/locals-guide/eat/eat-background.jpg");
+}
+
+.drinkBackground {
+  background-image: url("./images/locals-guide/drink/drink-background.jpg");
+}
+
+.doBackground {
+  background-image: url("./images/locals-guide/see/see-background.jpg");
+}
+
+.miscBackground {
+  background-image: url("./images/locals-guide/misc/misc-background.jpg");
+}
+
 @media screen and (min-width: 100px) {
   .primary-btn,
   .secondary-btn {
@@ -81,6 +105,10 @@ a {
   .section-container {
     padding: 0 10%;
     margin: 0 auto;
+  }
+
+  .locals-guide {
+    @include flex(column, center, space-evenly);
   }
 }
 
@@ -130,5 +158,9 @@ a {
   .primary-btn,
   .secondary-btn {
     padding: 0.5rem 2.5rem;
+  }
+
+  .locals-guide {
+    @include flex(row, center, space-evenly);
   }
 }
