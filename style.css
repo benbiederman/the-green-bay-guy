@@ -61,6 +61,11 @@ main {
   margin-top: 5.5rem;
 }
 
+.content-with-hero {
+  margin-top: 0;
+  min-height: 200vh;
+}
+
 /* Navigation */
 .header {
   width: 100%;
@@ -103,7 +108,7 @@ main {
   cursor: pointer;
 }
 
-.nav-scroll {
+.background-black {
   background-color: var(--black);
 }
 
@@ -181,10 +186,6 @@ main {
   main {
     margin-top: 5rem;
     min-height: 100vh;
-  }
-
-  .content-with-hero {
-    margin-top: 0;
   }
 
   /* Navigation */
