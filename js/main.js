@@ -5,14 +5,14 @@ function buildNavigation() {
   const navigation = `<button id="skip-to-content-btn">Skip to main content</button>
     <img src="/assets/logo.png" alt="The Green Bay Guy logo" />
     <button class="toggle-nav" aria-controls="nav">Menu</button>
-    <div class="nav">
+    <nav class="nav">
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/locals-guide">Local's Guide</a></li>
         <li><a href="/content">Content</a></li>
         <li><a href="/shop">Shop</a></li>
       </ul>
-    </div>`;
+    </nav>`;
 
   header.innerHTML = navigation;
   navigationHandler();
@@ -20,7 +20,7 @@ function buildNavigation() {
 
 function navigationHandler() {
   const toggleNavBtn = document.querySelector(".toggle-nav");
-  const mobileNav = document.querySelector(".nav");
+  const nav = document.querySelector(".nav");
   const navLinks = document.querySelectorAll(".nav ul li a");
   const skipToContentBtn = document.querySelector("#skip-to-content-btn");
   let transparentNav = document.querySelector(".header-with-hero") || "";
@@ -33,16 +33,18 @@ function navigationHandler() {
     if (screenType === "Mobile" && screenAdjustment >= 1024) {
       screenType = "Desktop";
       setNavAttributes();
+      setHeaderStyling();
     }
     if (screenType === "Desktop" && screenAdjustment < 1024) {
       screenType = "Mobile";
       setNavAttributes();
+      setHeaderStyling();
     }
   });
 
   if (transparentNav) {
     window.addEventListener("scroll", () => {
-      headerUpdate();
+      setHeaderStyling();
     });
   }
 
@@ -53,15 +55,16 @@ function navigationHandler() {
 
   // Mobile nav button handler
   toggleNavBtn.addEventListener("click", () => {
-    mobileNav.classList.toggle("nav-active");
+    nav.classList.toggle("nav-active");
     setNavAttributes();
+    setHeaderStyling();
   });
 
   // Set link/container attributes
   function setNavAttributes() {
-    const mobileNav = document.querySelector(".nav");
+    const nav = document.querySelector(".nav");
     if (screenType === "Mobile") {
-      if (mobileNav.classList.contains("nav-active")) {
+      if (nav.classList.contains("nav-active")) {
         toggleNavBtn.ariaExpanded = true;
         navLinks.forEach((link) => {
           link.tabIndex = 0;
@@ -80,15 +83,19 @@ function navigationHandler() {
     }
   }
 
-  // Adds background color to header
-  function headerUpdate() {
-    let yPosition = window.scrollY;
-
-    if (transparentNav) {
-      if (yPosition > 0) {
-        header.classList.add("nav-scroll");
+  function setHeaderStyling() {
+    if (screenType === "Mobile") {
+      if (nav.classList.contains("nav-active") || window.scrollY > 0) {
+        header.classList.add("background-black");
       } else {
-        header.classList.remove("nav-scroll");
+        header.classList.remove("background-black");
+      }
+    }
+    if (screenType === "Desktop") {
+      if (window.scrollY > 0) {
+        header.classList.add("background-black");
+      } else {
+        header.classList.remove("background-black");
       }
     }
   }
