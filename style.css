@@ -170,6 +170,7 @@ main {
   background-color: var(--black);
   transition: opacity 0.25s ease;
   opacity: 0;
+  display: none;
 }
 
 /* Tablet */
