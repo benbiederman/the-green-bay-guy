@@ -72,6 +72,7 @@ function navigationHandler() {
         navLinks.forEach((link) => {
           link.tabIndex = 0;
         });
+        overlay.style.display = "block";
         overlay.style.opacity = 0.8;
       } else {
         toggleNavBtn.textContent = "Menu";
@@ -79,6 +80,7 @@ function navigationHandler() {
         navLinks.forEach((link) => {
           link.tabIndex = -1;
         });
+        overlay.style.display = "none";
         overlay.style.opacity = 0;
       }
     }
@@ -86,6 +88,7 @@ function navigationHandler() {
       navLinks.forEach((link) => {
         link.tabIndex = 0;
       });
+      overlay.style.display = "none";
       overlay.style.opacity = 0;
     }
   }
