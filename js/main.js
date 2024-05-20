@@ -12,7 +12,8 @@ function buildNavigation() {
         <li><a href="/content">Content</a></li>
         <li><a href="/shop">Shop</a></li>
       </ul>
-    </nav>`;
+    </nav>
+    <div class="overlay" />`;
 
   header.innerHTML = navigation;
   navigationHandler();
@@ -23,7 +24,8 @@ function navigationHandler() {
   const nav = document.querySelector(".nav");
   const navLinks = document.querySelectorAll(".nav ul li a");
   const skipToContentBtn = document.querySelector("#skip-to-content-btn");
-  let transparentNav = document.querySelector(".header-with-hero") || "";
+  const transparentNav = document.querySelector(".header-with-hero") || "";
+  const overlay = document.querySelector(".overlay");
 
   setNavAttributes();
 
@@ -65,21 +67,26 @@ function navigationHandler() {
     const nav = document.querySelector(".nav");
     if (screenType === "Mobile") {
       if (nav.classList.contains("nav-active")) {
+        toggleNavBtn.textContent = "Close";
         toggleNavBtn.ariaExpanded = true;
         navLinks.forEach((link) => {
           link.tabIndex = 0;
         });
+        overlay.style.opacity = 0.8;
       } else {
+        toggleNavBtn.textContent = "Menu";
         toggleNavBtn.ariaExpanded = false;
         navLinks.forEach((link) => {
           link.tabIndex = -1;
         });
+        overlay.style.opacity = 0;
       }
     }
     if (screenType === "Desktop") {
       navLinks.forEach((link) => {
         link.tabIndex = 0;
       });
+      overlay.style.opacity = 0;
     }
   }
 
