@@ -160,6 +160,18 @@ main {
   color: var(--light-green);
 }
 
+.overlay {
+  width: 100%;
+  left: 0;
+  top: 5.5rem;
+  position: absolute;
+  z-index: 350;
+  height: calc(100vh - 5.5rem);
+  background-color: var(--black);
+  transition: opacity 0.25s ease;
+  opacity: 0;
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   .nav {
