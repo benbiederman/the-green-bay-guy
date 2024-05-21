@@ -17,10 +17,10 @@
 :root {
   --font-headers: "Oswald", sans-serif;
   --font-default: "Source Sans 3", sans-serif;
-  --light-green: #198f46;
-  --branding-green: #127538;
+  --branding-green: #4f7942;
   --black: #000;
   --white: #fff;
+  --container-padding: 2rem 5%;
 }
 
 h1,
@@ -31,13 +31,13 @@ h5,
 h6 {
   font-family: var(--font-headers);
   font-weight: 500;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 p,
 a {
   font-family: var(--font-default);
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
@@ -45,11 +45,22 @@ button {
   border: none;
   font-family: var(--font-headers);
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
-  padding: 0.5rem 2rem;
+  padding: 0.75rem 2rem;
   line-height: 1;
   border-radius: 5px;
+  color: var(--white);
+}
+
+.secondary-button {
+  background-color: #000000b3;
+  border: 2.5px solid white;
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+  background-color: var(--branding-green);
 }
 
 ul,
@@ -61,9 +72,14 @@ main {
   margin-top: 5.5rem;
 }
 
-.content-with-hero {
+.page-with-hero {
   margin-top: 0;
   min-height: 200vh;
+}
+
+.container {
+  padding: 2rem 5%;
+  width: 100%;
 }
 
 /* Navigation */
@@ -105,6 +121,9 @@ main {
 
 .header img {
   height: 5rem;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
   cursor: pointer;
 }
 
@@ -157,7 +176,7 @@ main {
 
 .nav a:hover,
 .nav a:focus {
-  color: var(--light-green);
+  color: var(--branding-green);
 }
 
 .overlay {
@@ -173,15 +192,64 @@ main {
   display: none;
 }
 
+/* Homepage */
+.homepage-hero {
+  background-image: url("/assets/homepage-hero-mobile.jpg");
+  width: 100%;
+  min-height: 90vh;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage-hero-content {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.homepage-hero-content h1,
+.homepage-hero-content p {
+  text-shadow: 0px 0px 8px var(--black);
+}
+
+.homepage-hero-content h1 {
+  line-height: 1.25;
+}
+
+.homepage-hero-content p {
+  margin: 2rem 0;
+  font-weight: 400;
+}
+
 /* Tablet */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .container {
+    padding: 2rem 10%;
+    width: 100%;
+  }
+
+  /* Navigation */
   .nav {
     min-height: 35vh;
+  }
+
+  /* Homepage */
+  .homepage-hero {
+    min-height: 60vh;
+    background-image: url("./assets/homepage-hero.jpg");
+  }
+
+  .homepage-hero-content {
+    padding: 2rem 15%;
   }
 }
 
 /* Desktop */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (orientation: landscape) {
   h1,
   h2,
   h3,
@@ -199,6 +267,10 @@ main {
   main {
     margin-top: 5rem;
     min-height: 100vh;
+  }
+
+  .container {
+    padding: 2rem 1.25%;
   }
 
   /* Navigation */
@@ -243,5 +315,21 @@ main {
 
   .nav a {
     font-size: 1.75rem;
+  }
+
+  /* Homepage */
+  .homepage-hero {
+    min-height: 100vh;
+    background-image: url("/assets/homepage-hero.jpg");
+    background-size: cover;
+  }
+
+  .homepage-hero-content {
+    padding: 2rem 25%;
+    margin-top: -5rem;
+  }
+
+  .homepage-hero-content p {
+    margin: 1rem 0;
   }
 }
