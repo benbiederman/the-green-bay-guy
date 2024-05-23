@@ -18,6 +18,7 @@
   --font-headers: "Oswald", sans-serif;
   --font-default: "Source Sans 3", sans-serif;
   --branding-green: #4f7942;
+  --dark-green: #3b5b33;
   --black: #000;
   --white: #fff;
   --container-padding: 2rem 5%;
@@ -38,7 +39,7 @@ p,
 a {
   font-family: var(--font-default);
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 button {
@@ -129,6 +130,7 @@ main {
 
 .background-black {
   background-color: var(--black);
+  color: var(--white);
 }
 
 .toggle-nav {
@@ -207,7 +209,7 @@ main {
 
 .homepage-hero-content {
   width: 100%;
-  color: white;
+  color: var(--white);
   text-align: center;
 }
 
@@ -225,10 +227,102 @@ main {
   font-weight: 400;
 }
 
+.content-callout-container {
+  text-align: center;
+}
+
+.locals-guide-articles-container {
+  margin-top: 3rem;
+}
+
+.locals-guide-article {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  min-height: 30vh;
+  width: 100%;
+  text-align: left;
+  color: var(--black);
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  margin: 1.25rem auto;
+}
+
+.locals-guide-rating {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px var(--black);
+}
+
+.locals-guide-rating p {
+  font-weight: 500;
+  line-height: 1;
+  font-family: var(--font-headers);
+}
+
+.locals-guide-article img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px 5px 0 0;
+}
+
+.article-information {
+  padding: 0.5rem 1rem;
+}
+
+.article-tags {
+  display: flex;
+}
+
+.article-tag {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0rem 0.5rem;
+  border-radius: 5px;
+  margin: 0 0.25rem 0.5rem 0;
+}
+
+.article-tag span {
+  font-family: var(--font-default);
+  font-size: 1rem;
+}
+
+.article-information h2,
+.article-information h3 {
+  font-size: 1.75rem;
+  padding: 0rem 0 0.25rem;
+}
+
+.locals-guide-article:hover h2,
+.locals-guide-article:focus h2,
+.locals-guide-article:hover h3,
+.locals-guide-article:focus h3 {
+  color: var(--dark-green);
+}
+
+.article-information hr {
+  background-color: var(--branding-green);
+  height: 1px;
+  border: none;
+}
+
+.article-information p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .container {
-    padding: 2rem 10%;
+    padding: 2rem 5%;
     width: 100%;
   }
 
@@ -245,6 +339,17 @@ main {
 
   .homepage-hero-content {
     padding: 2rem 15%;
+  }
+
+  .locals-guide-articles-container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(calc(50% - 10px), calc(50% - 10px))
+    );
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
   }
 }
 
@@ -270,7 +375,7 @@ main {
   }
 
   .container {
-    padding: 2rem 1.25%;
+    padding: 3rem 1.25%;
   }
 
   /* Navigation */
@@ -326,10 +431,31 @@ main {
 
   .homepage-hero-content {
     padding: 2rem 25%;
-    margin-top: -5rem;
   }
 
   .homepage-hero-content p {
-    margin: 1rem 0;
+    margin: 1rem 0 2rem;
+  }
+
+  .locals-guide-articles-container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(calc(25% - 15px), calc(25% - 15px))
+    );
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .locals-guide-article {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .homepage-hero-content {
+    padding: 2rem 25%;
+    margin-top: -5rem;
   }
 }

@@ -22,13 +22,10 @@ function buildNavigation() {
 function navigationHandler() {
   const toggleNavBtn = document.querySelector(".toggle-nav");
   const nav = document.querySelector(".nav");
-  const navLinks = document.querySelectorAll(".nav ul li a");
   const skipToContentBtn = document.querySelector("#skip-to-content-btn");
   const transparentNav = document.querySelector(".header-with-hero") || "";
-  const overlay = document.querySelector(".overlay");
 
   setNavAttributes();
-
   // Reset if user resizes window
   window.addEventListener("resize", () => {
     let screenAdjustment = window.innerWidth;
@@ -61,52 +58,58 @@ function navigationHandler() {
     setNavAttributes();
     setHeaderStyling();
   });
+}
 
-  // Set link/container attributes
-  function setNavAttributes() {
-    const nav = document.querySelector(".nav");
-    if (screenType === "Mobile") {
-      if (nav.classList.contains("nav-active")) {
-        toggleNavBtn.textContent = "Close";
-        toggleNavBtn.ariaExpanded = true;
-        navLinks.forEach((link) => {
-          link.tabIndex = 0;
-        });
-        overlay.style.display = "block";
-        overlay.style.opacity = 0.8;
-      } else {
-        toggleNavBtn.textContent = "Menu";
-        toggleNavBtn.ariaExpanded = false;
-        navLinks.forEach((link) => {
-          link.tabIndex = -1;
-        });
-        overlay.style.display = "none";
-        overlay.style.opacity = 0;
-      }
-    }
-    if (screenType === "Desktop") {
+// Set link/container attributes
+function setNavAttributes() {
+  const nav = document.querySelector(".nav");
+  const toggleNavBtn = document.querySelector(".toggle-nav");
+  const navLinks = document.querySelectorAll(".nav ul li a");
+  const overlay = document.querySelector(".overlay");
+
+  if (screenType === "Mobile") {
+    if (nav.classList.contains("nav-active")) {
+      toggleNavBtn.textContent = "Close";
+      toggleNavBtn.ariaExpanded = true;
       navLinks.forEach((link) => {
         link.tabIndex = 0;
+      });
+      overlay.style.display = "block";
+      overlay.style.opacity = 0.8;
+    } else {
+      toggleNavBtn.textContent = "Menu";
+      toggleNavBtn.ariaExpanded = false;
+      navLinks.forEach((link) => {
+        link.tabIndex = -1;
       });
       overlay.style.display = "none";
       overlay.style.opacity = 0;
     }
   }
+  if (screenType === "Desktop") {
+    navLinks.forEach((link) => {
+      link.tabIndex = 0;
+    });
+    overlay.style.display = "none";
+    overlay.style.opacity = 0;
+  }
+}
 
-  function setHeaderStyling() {
-    if (screenType === "Mobile") {
-      if (nav.classList.contains("nav-active") || window.scrollY > 0) {
-        header.classList.add("background-black");
-      } else {
-        header.classList.remove("background-black");
-      }
+function setHeaderStyling() {
+  const nav = document.querySelector(".nav");
+
+  if (screenType === "Mobile") {
+    if (nav.classList.contains("nav-active") || window.scrollY > 0) {
+      header.classList.add("background-black");
+    } else {
+      header.classList.remove("background-black");
     }
-    if (screenType === "Desktop") {
-      if (window.scrollY > 0) {
-        header.classList.add("background-black");
-      } else {
-        header.classList.remove("background-black");
-      }
+  }
+  if (screenType === "Desktop") {
+    if (window.scrollY > 0) {
+      header.classList.add("background-black");
+    } else {
+      header.classList.remove("background-black");
     }
   }
 }
