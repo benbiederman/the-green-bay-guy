@@ -64,6 +64,16 @@ button {
   background-color: var(--branding-green);
 }
 
+.primary-button {
+  background-color: var(--branding-green);
+  border: 2.5px solid white;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+  background-color: var(--dark-green);
+}
+
 ul,
 ol {
   list-style: none;
@@ -81,6 +91,16 @@ main {
 .container {
   padding: 2rem 5%;
   width: 100%;
+}
+
+.hr {
+  height: 1px;
+  margin: 2rem auto;
+  width: 70%;
+}
+
+.hr-primary {
+  background-color: var(--dark-green);
 }
 
 /* Navigation */
@@ -197,6 +217,7 @@ main {
 /* Homepage */
 .homepage-hero {
   background-image: url("/assets/homepage-hero-mobile.jpg");
+  background-color: #000;
   width: 100%;
   min-height: 90vh;
   background-position: top;
@@ -239,7 +260,6 @@ main {
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  min-height: 30vh;
   width: 100%;
   text-align: left;
   color: var(--black);
@@ -247,6 +267,24 @@ main {
   position: relative;
   cursor: pointer;
   margin: 1.25rem auto;
+  box-shadow: 0px 0px 8px #5f5f5f;
+  border: 1px solid #a1a1a1;
+}
+
+.locals-guide-article:hover,
+.locals-guide-article:focus {
+  box-shadow: 0px 0px 8px #000;
+}
+
+.background-black .locals-guide-article {
+  box-shadow: none;
+  border: none;
+}
+
+.background-black .locals-guide-article:hover,
+.background-black .locals-guide-article:focus {
+  box-shadow: none;
+  border: none;
 }
 
 .locals-guide-rating {
@@ -338,11 +376,20 @@ main {
   margin-bottom: 0;
 }
 
+.content-callout-container button {
+  margin-top: 2rem;
+  width: 100%;
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .container {
     padding: 2rem 5%;
     width: 100%;
+  }
+
+  .hr {
+    width: 50%;
   }
 
   /* Navigation */
@@ -411,6 +458,10 @@ main {
 
   .container {
     padding: 3rem 1.25%;
+  }
+
+  .hr {
+    width: 40%;
   }
 
   /* Navigation */
@@ -492,6 +543,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 70%;
+    margin: 0 auto;
   }
 
   .about-container img {
@@ -501,6 +553,11 @@ main {
   .about-copy {
     width: 45%;
     margin-left: 8rem;
+  }
+
+  .content-callout-container button {
+    margin-top: 4rem;
+    width: 40%;
   }
 }
 
