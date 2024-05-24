@@ -1425,7 +1425,7 @@
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
     "rating": 4.7,
-    "favorite": false,
+    "favorite": true,
     "address": [
       {
         "name": "La Carreta",
@@ -1917,7 +1917,7 @@
     "category": ["Eat"],
     "tags": ["Dessert"],
     "rating": 4.75,
-    "favorite": true,
+    "favorite": false,
     "address": [
       {
         "name": "Sara's Artisan Gelato",
