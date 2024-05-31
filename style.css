@@ -89,7 +89,7 @@ button {
 }
 
 .secondary-button {
-  background-color: #000000b3;
+  background-color: var(--black);
   border: 2.5px solid white;
 }
 
@@ -306,6 +306,39 @@ main {
   margin-top: 1rem;
   font-size: 1rem;
   text-align: center;
+}
+
+/* Cookie popup */
+.cookie-popup {
+  display: block;
+  position: fixed;
+  padding: 1rem 5%;
+  box-shadow: 0px 0px 8px var(--black);
+  width: 95%;
+  left: 2.5%;
+  background-color: var(--white);
+  bottom: -200%;
+  z-index: 2000;
+  transition: bottom 0.5s ease;
+  outline: 0;
+}
+
+.cookie-popup h3 {
+  font-size: 2rem;
+}
+
+.cookie-popup p {
+  margin: 2rem auto;
+}
+
+.cookie-popup button {
+  width: 100%;
+  margin: 0.5rem auto;
+  border: none;
+}
+
+.cookie-popup-active {
+  bottom: 5%;
 }
 
 /* Homepage */
@@ -620,6 +653,28 @@ main {
 
   .nav a {
     font-size: 1.75rem;
+  }
+
+  /* Cookie popup */
+  .cookie-popup {
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cookie-container {
+    width: 40%;
+    margin-right: 10%;
+  }
+
+  .cookie-popup-ctas {
+    width: 20%;
+  }
+
+  .cookie-popup-active {
+    bottom: 0;
   }
 
   /* Footer */
