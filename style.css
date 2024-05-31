@@ -35,11 +35,24 @@ h6 {
   font-size: 2.5rem;
 }
 
+ol {
+  list-style-position: inside;
+}
+
+ol li {
+  margin: 2rem 0;
+}
+
 p,
-a {
+a,
+li {
   font-family: var(--font-default);
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+a {
+  color: var(--black);
 }
 
 button {
@@ -52,6 +65,10 @@ button {
   line-height: 1;
   border-radius: 5px;
   color: var(--white);
+}
+
+.bold {
+  font-weight: 400;
 }
 
 .curved-dark,
@@ -91,8 +108,7 @@ button {
   background-color: var(--dark-green);
 }
 
-ul,
-ol {
+ul {
   list-style: none;
 }
 
@@ -102,7 +118,6 @@ main {
 
 .page-with-hero {
   margin-top: 0;
-  min-height: 200vh;
 }
 
 .container {
@@ -452,6 +467,16 @@ main {
   width: 100%;
 }
 
+/* Articles */
+.article a {
+  font-weight: 400;
+}
+
+.article a:hover,
+.article a:focus {
+  color: var(--dark-green);
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) and (orientation: portrait),
   (min-width: 768px) and (orientation: landscape) {
@@ -516,6 +541,12 @@ main {
   .about-container img {
     width: 80%;
   }
+
+  /* Articles */
+  .article {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 /* Desktop */
@@ -536,7 +567,7 @@ main {
 
   main {
     margin-top: 5rem;
-    min-height: 100vh;
+    min-height: 80vh;
   }
 
   .container {
@@ -670,6 +701,11 @@ main {
     margin-top: 4rem;
     width: 40%;
   }
+
+  /* Articles */
+  .article {
+    width: 55%;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -685,5 +721,10 @@ main {
 
   .about-copy {
     width: 40%;
+  }
+
+  /* Articles */
+  .article {
+    width: 50%;
   }
 }
