@@ -336,6 +336,7 @@ function buildSocialsAndCopyright() {
     const image = document.createElement("img");
     image.src = site.src;
     image.alt = `${site.alt} (opens in new window)`;
+    image.loading = "lazy";
     image.tabIndex = 0;
     image.classList.add(`${site.alt.toLowerCase().split(" ").join("-")}`);
     socialsContainer.appendChild(image);
