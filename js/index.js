@@ -1,6 +1,6 @@
 import { buildLocalsGuide } from "./buildLocalsGuide.js";
-import { fetchData } from "./fetchData.js";
-const homepageHero = document.querySelector(".homepage-hero");
+import { fetchData } from "./helpers/fetchData.js";
+import { sortByTagsAndRating } from "./helpers/filterData.js";
 const homepageHeroCTA = document.querySelector(".homepage-hero-content button");
 const goToButton = document.querySelector(".go-to-button");
 let localsGuideData = await fetchData("./data/locals-guides.json");
@@ -26,7 +26,6 @@ function generateGuideData(data) {
   data.forEach((guide) => {
     if (guide.favorite) {
       gotoGuides.push(guide);
-
       gotoGuides = sortByTagsAndRating(gotoGuides);
     }
     if (guide.spotlightGuide) {
@@ -45,26 +44,4 @@ function generateGuideData(data) {
       buildLocalsGuide("h3", goToContainer, guide);
     });
   }
-}
-
-function sortByTagsAndRating(data) {
-  const priority = {
-    Coffee: 1,
-    Breakfast: 2,
-    Lunch: 3,
-  };
-
-  return data.sort((a, b) => {
-    const aTagPriority = priority[a.tags[0]] || 99;
-    const bTagPriority = priority[b.tags[0]] || 99;
-
-    if (aTagPriority < bTagPriority) return -1;
-    if (aTagPriority > bTagPriority) return 1;
-
-    // If both have the same tag priority, sort by rating
-    if (a.rating > b.rating) return -1;
-    if (a.rating < b.rating) return 1;
-
-    return 0;
-  });
 }
