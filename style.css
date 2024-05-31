@@ -114,6 +114,7 @@ ul {
 
 main {
   margin-top: 5.5rem;
+  min-height: 50vh;
 }
 
 .page-with-hero {

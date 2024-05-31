@@ -458,9 +458,9 @@ function cookieFunctionality(e) {
   const popup = document.querySelector(".cookie-popup");
   if (e?.target?.innerHTML) {
     if (e.target.innerHTML.toLowerCase() === "allow all cookies") {
-      document.cookie = "cookies_approval=true";
+      document.cookie = "cookies_approval=true; path=/";
     } else {
-      document.cookie = "cookies_approval=false";
+      document.cookie = "cookies_approval=false; path=/";
     }
   }
 
