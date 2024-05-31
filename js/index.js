@@ -10,7 +10,7 @@ homepageHeroCTA.addEventListener("click", () => {
 });
 
 goToButton.addEventListener("click", () => {
-  window.location.href = "/locals-guide";
+  window.location.href = "/locals-guide/";
 });
 
 if (localsGuideData && localsGuideData.length && localsGuideData.length > 0) {

@@ -241,15 +241,15 @@ function buildFooterLinks() {
       links: [
         {
           label: "Accessibility",
-          url: "/accessibility",
+          url: "/accessibility.html",
         },
         {
           label: "Business inquiries",
-          url: "/business-inquiries",
+          url: "/business-inquiries.html",
         },
         {
           label: "Privacy policy",
-          url: "/privacy-policy",
+          url: "/privacy-policy.html",
         },
       ],
     },
