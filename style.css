@@ -501,6 +501,41 @@ main {
   width: 100%;
 }
 
+/* Locals-guides */
+.lg-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.25rem;
+}
+
+.lg-button {
+  min-height: 20vh;
+  width: 100%;
+  margin: 0.25rem 0;
+  font-size: 2.5rem;
+  background-size: cover;
+  background-position: center;
+  background-image: var(--black);
+}
+
+.eat-button {
+  background-image: url("/assets/locals-guide/backgrounds/eat.jpg");
+}
+
+.drink-button {
+  background-image: url("/assets/locals-guide/backgrounds/drink.jpg");
+}
+
+.do-button {
+  background-image: url("/assets/locals-guide/backgrounds/do.jpg");
+}
+
+.misc-button {
+  background-image: url("/assets/locals-guide/backgrounds/misc.jpg");
+}
+
 /* Articles */
 .article a {
   font-weight: 400;
@@ -758,6 +793,55 @@ main {
     width: 40%;
   }
 
+  /* Locals-guides */
+  .lg-button-container {
+    flex-direction: row;
+    padding: 0.25rem 0;
+  }
+
+  .lg-button {
+    min-height: 85vh;
+    width: calc(25vw - 0.25rem);
+    margin: 0 0.25rem;
+    font-size: 3rem;
+  }
+
+  .eat-button {
+    background-image: url("/assets/locals-guide/backgrounds/eat-dark.jpg");
+  }
+
+  .eat-button:hover,
+  .eat-button:focus {
+    background-image: url("/assets/locals-guide/backgrounds/eat.jpg");
+  }
+
+  .drink-button {
+    background-image: url("/assets/locals-guide/backgrounds/drink-dark.jpg");
+  }
+
+  .drink-button:hover,
+  .drink-button:focus {
+    background-image: url("/assets/locals-guide/backgrounds/drink.jpg");
+  }
+
+  .do-button {
+    background-image: url("/assets/locals-guide/backgrounds/do-dark.jpg");
+  }
+
+  .do-button:hover,
+  .do-button:focus {
+    background-image: url("/assets/locals-guide/backgrounds/do.jpg");
+  }
+
+  .misc-button {
+    background-image: url("/assets/locals-guide/backgrounds/misc-dark.jpg");
+  }
+
+  .misc-button:hover,
+  .misc-button:focus {
+    background-image: url("/assets/locals-guide/backgrounds/misc.jpg");
+  }
+
   /* Articles */
   .article {
     width: 55%;
@@ -777,6 +861,12 @@ main {
 
   .about-copy {
     width: 40%;
+  }
+
+  /* Locals-guides */
+
+  .lg-button {
+    min-height: 90vh;
   }
 
   /* Articles */
