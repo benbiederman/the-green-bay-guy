@@ -13,7 +13,7 @@ goToButton.addEventListener("click", () => {
   window.location.href = "/locals-guide/";
 });
 
-if (localsGuideData && localsGuideData.length && localsGuideData.length > 0) {
+if (localsGuideData && localsGuideData?.length > 0) {
   generateGuideData(localsGuideData);
 }
 

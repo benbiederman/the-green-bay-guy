@@ -19,3 +19,19 @@ export const sortByTagsAndRating = (data) => {
     return 0;
   });
 };
+
+export const sortByRating = (data) => {
+  return data.sort((a, b) => {
+    if (a.rating > b.rating) return -1;
+    if (a.rating < b.rating) return 1;
+    return 0;
+  });
+};
+
+export const sortAlphabetically = (data) => {
+  return data.sort((a, b) => {
+    if (a.title > b.title) return 1;
+    if (a.title < b.title) return -1;
+    return 0;
+  });
+};

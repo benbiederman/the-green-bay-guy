@@ -1,5 +1,4 @@
 export function buildLocalsGuide(heading, container, item) {
-  let itemYPosition = container.getBoundingClientRect().y;
   let screenYheight = window.innerHeight;
   let path = window.location.pathname;
 
@@ -13,6 +12,7 @@ export function buildLocalsGuide(heading, container, item) {
     item.rating ? item.rating + " rating" : ""
   }, ${item.distance ? item.distance + " miles from Lambeau Field" : ""}`;
   container.appendChild(article);
+  let itemYPosition = article.getBoundingClientRect().y;
 
   if (item.rating) {
     const ratingContainer = document.createElement("div");
@@ -31,10 +31,10 @@ export function buildLocalsGuide(heading, container, item) {
     img.alt = item.secondaryAlt;
   } else {
     img.src = `../assets/${contentType}/${item.mainImg}`;
-    img.alt = item.alt;
+    img.alt = item.mainAlt;
   }
-  img.src = `/assets/${contentType}/${item.mainImg}`;
-  img.alt = item.mainAlt;
+  img.width = "400";
+  img.height = "250";
   if (itemYPosition > screenYheight) {
     img.loading = "lazy";
   }
