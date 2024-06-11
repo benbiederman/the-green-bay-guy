@@ -1,6 +1,10 @@
 import { buildLocalsGuide } from "./buildLocalsGuide.js";
 import { fetchData } from "./helpers/fetchData.js";
 import { sortByTagsAndRating } from "./helpers/filterData.js";
+import { buildNavigation } from "./component/header.js";
+import { buildFooter } from "./component/footer.js";
+import { setCookies } from "./component/cookieConsent.js";
+
 const homepageHeroCTA = document.querySelector(".homepage-hero-content button");
 const goToButton = document.querySelector(".go-to-button");
 let localsGuideData = await fetchData("./data/locals-guides.json");
@@ -45,3 +49,7 @@ function generateGuideData(data) {
     });
   }
 }
+
+buildNavigation();
+buildFooter();
+setCookies();
