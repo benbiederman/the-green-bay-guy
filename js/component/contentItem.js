@@ -1,4 +1,4 @@
-export function buildLocalsGuide(heading, container, item) {
+export function contentItem(heading, container, item) {
   let screenYheight = window.innerHeight;
   let path = window.location.pathname;
 
@@ -15,13 +15,19 @@ export function buildLocalsGuide(heading, container, item) {
   let itemYPosition = article.getBoundingClientRect().y;
 
   if (item.rating) {
-    const ratingContainer = document.createElement("div");
-    ratingContainer.classList.add("locals-guide-rating");
+    // Show rating for only food items and coffee
+    if (
+      !path.includes("drink") ||
+      (path.includes("drink") && item.tags.includes("Coffee"))
+    ) {
+      const ratingContainer = document.createElement("div");
+      ratingContainer.classList.add("locals-guide-rating");
 
-    const rating = document.createElement("p");
-    rating.textContent = item.rating;
-    ratingContainer.appendChild(rating);
-    article.appendChild(ratingContainer);
+      const rating = document.createElement("p");
+      rating.textContent = item.rating;
+      ratingContainer.appendChild(rating);
+      article.appendChild(ratingContainer);
+    }
   }
 
   // Add Image
@@ -97,8 +103,6 @@ function generateTagColor(tag) {
   switch (tag) {
     case "$$$":
       return "#9A3737";
-    case "Activity":
-      return "#056071";
     case "Alcohol":
       return "#000";
     case "Breakfast":
@@ -109,6 +113,8 @@ function generateTagColor(tag) {
       return "#60063F";
     case "Dinner":
       return "#9A3737";
+    case "Entertainment":
+      return "#056071";
     case "Free":
       return "#35532D";
     case "Guide":
@@ -116,7 +122,7 @@ function generateTagColor(tag) {
     case "Lunch":
       return "#943B00";
     case "Shopping":
-      return "#943B00";
+      return "#595959";
     case "Fan":
       return "#056071";
     case "Player":

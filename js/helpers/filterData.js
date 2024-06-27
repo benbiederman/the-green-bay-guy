@@ -35,3 +35,13 @@ export const sortAlphabetically = (data) => {
     return 0;
   });
 };
+
+export const filterByTags = (data, tags) => {
+  return data.filter((item) =>
+    item.tags.some((tag) => tags.includes(tag.toLowerCase()))
+  );
+};
+
+export const filterByDistance = (data, distance) => {
+  return data.filter((item) => item.distance < distance);
+};
