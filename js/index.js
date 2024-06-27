@@ -1,9 +1,8 @@
-import { buildLocalsGuide } from "./buildLocalsGuide.js";
+import { contentItem } from "./component/contentItem.js";
 import { fetchData } from "./helpers/fetchData.js";
 import { sortByTagsAndRating } from "./helpers/filterData.js";
 import { buildNavigation } from "./component/header.js";
 import { buildFooter } from "./component/footer.js";
-import { setCookies } from "./component/cookieConsent.js";
 
 const homepageHeroCTA = document.querySelector(".homepage-hero-content button");
 const goToButton = document.querySelector(".go-to-button");
@@ -17,7 +16,7 @@ goToButton.addEventListener("click", () => {
   window.location.href = "/locals-guide/";
 });
 
-if (localsGuideData && localsGuideData.length && localsGuideData.length > 0) {
+if (localsGuideData && localsGuideData?.length > 0) {
   generateGuideData(localsGuideData);
 }
 
@@ -39,17 +38,16 @@ function generateGuideData(data) {
 
   if (miscContainer && spotlightGuide.length > 0) {
     spotlightGuide.forEach((guide) => {
-      buildLocalsGuide("h3", miscContainer, guide);
+      contentItem("h3", miscContainer, guide);
     });
   }
 
   if (goToContainer && gotoGuides.length > 0) {
     gotoGuides.forEach((guide) => {
-      buildLocalsGuide("h3", goToContainer, guide);
+      contentItem("h3", goToContainer, guide);
     });
   }
 }
 
 buildNavigation();
 buildFooter();
-setCookies();

@@ -16,7 +16,122 @@
   </head>
   <body>
     <header class="header"></header>
-    <main id="main"></main>
+    <main id="main">
+      <section class="container category-page-container">
+        <div class="content-articles-header">
+          <h1>Eat <span class="results-counter"></span></h1>
+          <button class="transparent-icon-button filters-button">
+            <span class="button-label"> Show filters</span>
+            <img
+              src="/assets/icons/filter.svg"
+              alt="filter icon"
+              width="25px"
+              height="25px"
+            />
+          </button>
+        </div>
+        <div class="filters-and-content-container">
+          <div class="content-filters-container">
+            <button
+              class="secondary-button close-button"
+              aria-label="Close filters"
+            >
+              X
+            </button>
+            <div class="filter-options">
+              <ul>
+                <li><a href="/locals-guide/eat.html">Eat*</a></li>
+                <li><a href="/locals-guide/drink.html">Drink</a></li>
+                <li><a href="/locals-guide/do.html">Do</a></li>
+                <li><a href="/locals-guide/misc.html">Misc</a></li>
+              </ul>
+              <hr />
+              <form>
+                <fieldset class="primary-filter-tags">
+                  <legend>Meal type:</legend>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="breakfast"
+                      value="breakfast"
+                      checked
+                    />
+                    <label for="breakfast">Breakfast</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="lunch" value="lunch" checked />
+                    <label for="lunch">Lunch</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="dinner" value="dinner" checked />
+                    <label for="dinner">Dinner</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="dessert"
+                      value="dessert"
+                      checked
+                    />
+                    <label for="dessert">Dessert</label>
+                  </div>
+                  <p>At least one option must be selected</p>
+                </fieldset>
+                <hr />
+                <fieldset class="distance-from-lambeau">
+                  <legend>Distance from Lambeau Field:</legend>
+                  <div>
+                    <input
+                      type="radio"
+                      name="distance"
+                      id="any"
+                      value="any"
+                      checked
+                    />
+                    <label for="any">Any</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="distance" id="1" value="1" />
+                    <label for="1">1 mile or less</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="distance" id="2" value="2" />
+                    <label for="2">2 miles or less</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="distance" id="5" value="5" />
+                    <label for="5">5 miles or less</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="distance" id="10" value="10" />
+                    <label for="10">10 miles or less</label>
+                  </div>
+                </fieldset>
+              </form>
+              <div class="filter-buttons">
+                <button class="secondary-button reset-button" type="reset">
+                  Reset
+                </button>
+                <button class="primary-button apply-button" type="submit">
+                  Apply
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="content-articles-container eat-articles-container"></div>
+          <div class="no-results"></div>
+        </div>
+        <div class="disclaimer">
+          <p>
+            *Disclaimer: I have the palate of a seven-year-old. My ratings are
+            based on my own tastes and experiences, and I'm not a food review
+            expert. I recommend trying any place in Green Bay at least once.
+            Even if I give a lower score, it doesn't mean the place isn't dope -
+            it just might not be my style.*
+          </p>
+        </div>
+      </section>
+    </main>
     <footer
       class="background-black curved-dark-before container footer"
     ></footer>

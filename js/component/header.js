@@ -1,6 +1,5 @@
 const header = document.querySelector(".header");
 let screenType = window.innerWidth < 1024 ? "Mobile" : "Desktop";
-const main = document.querySelector("main");
 
 // Header
 export function buildNavigation() {

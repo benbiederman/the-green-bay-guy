@@ -1424,7 +1424,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 4.7,
+    "rating": 4.75,
     "favorite": true,
     "address": [
       {
@@ -2300,7 +2300,7 @@
     "secondaryImg": null,
     "secondaryAlt": null,
     "category": ["Do"],
-    "tags": ["$$$"],
+    "tags": ["Entertainment", "$$$"],
     "rating": null,
     "favorite": false,
     "address": [
@@ -2336,7 +2336,7 @@
     "secondaryImg": null,
     "secondaryAlt": null,
     "category": ["Do"],
-    "tags": ["Free"],
+    "tags": ["Entertainment", "Free", "$$$"],
     "rating": null,
     "favorite": false,
     "address": [
@@ -2372,7 +2372,7 @@
     "secondaryImg": null,
     "secondaryAlt": null,
     "category": ["Do"],
-    "tags": ["Free", "$$$"],
+    "tags": ["Entertainment", "Free", "$$$"],
     "rating": null,
     "favorite": false,
     "address": [
@@ -2408,7 +2408,7 @@
     "secondaryImg": null,
     "secondaryAlt": null,
     "category": ["Do"],
-    "tags": ["Free", "$$$"],
+    "tags": ["Entertainment", "Free", "$$$"],
     "rating": null,
     "favorite": false,
     "address": [
@@ -2444,7 +2444,7 @@
     "secondaryImg": null,
     "secondaryAlt": null,
     "category": ["Do"],
-    "tags": ["Free", "$$$"],
+    "tags": ["Entertainment", "Free", "$$$"],
     "rating": null,
     "favorite": false,
     "address": [
@@ -2480,7 +2480,7 @@
     "secondaryImg": null,
     "secondaryAlt": null,
     "category": ["Do"],
-    "tags": ["Shopping"],
+    "tags": ["Shopping", "$$$"],
     "rating": null,
     "favorite": false,
     "address": [

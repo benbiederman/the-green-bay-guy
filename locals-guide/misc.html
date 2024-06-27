@@ -16,7 +16,63 @@
   </head>
   <body>
     <header class="header"></header>
-    <main id="main"></main>
+    <main id="main">
+      <section class="container category-page-container">
+        <div class="content-articles-header">
+          <h1>Misc <span class="results-counter"></span></h1>
+          <button class="transparent-icon-button filters-button">
+            <span class="button-label"> Show filters</span>
+            <img
+              src="/assets/icons/filter.svg"
+              alt="filter icon"
+              width="25px"
+              height="25px"
+            />
+          </button>
+        </div>
+        <div class="filters-and-content-container">
+          <div class="content-filters-container">
+            <button
+              class="secondary-button close-button"
+              aria-label="Close filters"
+            >
+              X
+            </button>
+            <div class="filter-options">
+              <ul>
+                <li><a href="/locals-guide/eat.html">Eat</a></li>
+                <li><a href="/locals-guide/drink.html">Drink</a></li>
+                <li><a href="/locals-guide/do.html">Do</a></li>
+                <li><a href="/locals-guide/misc.html">Misc*</a></li>
+              </ul>
+              <hr />
+              <form>
+                <fieldset class="primary-filter-tags">
+                  <legend>Article type:</legend>
+                  <div>
+                    <input type="checkbox" id="guide" value="guide" checked />
+                    <label for="guide">Guide</label>
+                  </div>
+                  <p>At least one option must be selected</p>
+                </fieldset>
+              </form>
+              <div class="filter-buttons">
+                <button class="secondary-button reset-button" type="reset">
+                  Reset
+                </button>
+                <button class="primary-button apply-button" type="submit">
+                  Apply
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="content-articles-container drink-articles-container"
+          ></div>
+          <div class="no-results"></div>
+        </div>
+      </section>
+    </main>
     <footer
       class="background-black curved-dark-before container footer"
     ></footer>

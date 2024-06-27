@@ -19,3 +19,29 @@ export const sortByTagsAndRating = (data) => {
     return 0;
   });
 };
+
+export const sortByRating = (data) => {
+  return data.sort((a, b) => {
+    if (a.rating > b.rating) return -1;
+    if (a.rating < b.rating) return 1;
+    return 0;
+  });
+};
+
+export const sortAlphabetically = (data) => {
+  return data.sort((a, b) => {
+    if (a.title > b.title) return 1;
+    if (a.title < b.title) return -1;
+    return 0;
+  });
+};
+
+export const filterByTags = (data, tags) => {
+  return data.filter((item) =>
+    item.tags.some((tag) => tags.includes(tag.toLowerCase()))
+  );
+};
+
+export const filterByDistance = (data, distance) => {
+  return data.filter((item) => item.distance < distance);
+};
