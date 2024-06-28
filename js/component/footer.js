@@ -81,10 +81,10 @@ function buildFooterLinks() {
           label: "Business inquiries",
           url: "/business-inquiries.html",
         },
-        {
-          label: "Privacy policy",
-          url: "/privacy-policy.html",
-        },
+        // {
+        //   label: "Privacy policy",
+        //   url: "/privacy-policy.html",
+        // },
       ],
     },
     {
