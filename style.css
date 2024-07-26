@@ -35,6 +35,19 @@ h6 {
   font-size: 2.5rem;
 }
 
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+p::selection,
+li::selection,
+a::selection {
+  background-color: var(--branding-green);
+  color: var(--white);
+}
+
 ol {
   list-style-position: inside;
 }
@@ -143,6 +156,7 @@ main {
 
 .container-with-copy p {
   margin: 2rem 0;
+  line-height: 1.5;
 }
 
 .container-with-copy p:last-of-type {
@@ -696,6 +710,26 @@ fieldset p {
 }
 
 /* Articles */
+.article {
+  width: 90%;
+  padding: 2rem 0;
+  margin: 0 auto;
+}
+
+.article img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.article h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.multiple-locations {
+  position: relative;
+}
+
 .article a {
   font-weight: 400;
 }
@@ -703,6 +737,117 @@ fieldset p {
 .article a:hover,
 .article a:focus {
   color: var(--dark-green);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.rating div {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: var(--white);
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.rating p {
+  margin: 0;
+  line-height: 1;
+}
+
+.rating p:first-of-type {
+  font-size: 1.5rem;
+}
+
+.rating p:last-of-type {
+  margin-top: 0.25rem;
+  font-size: 3rem;
+  font-family: var(--font-headers);
+  font-weight: 400;
+}
+
+.thank-you-banner {
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+}
+
+.thank-you-banner p {
+  margin: 2rem 0;
+}
+
+.location-details {
+  text-align: center;
+}
+
+.location-details .about-copy h2 {
+  margin: 2rem 0 0;
+}
+
+.address p {
+  margin-top: 0.5rem;
+  font-style: normal;
+}
+
+.street,
+.city-state-zip {
+  display: block;
+}
+
+.location-details ul {
+  margin: 2rem 0;
+}
+
+.day {
+  font-weight: 400;
+}
+
+.location-ctas {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.location-ctas button:nth-of-type(2) {
+  margin-top: 1rem;
+}
+
+.previous-button,
+.next-button {
+  padding: 0.5rem 1rem;
+  display: none;
+}
+
+.multiple-locations .previous-button,
+.multiple-locations .next-button {
+  display: block;
+  position: absolute;
+}
+
+.multiple-locations .previous-button {
+  top: 32rem;
+  left: 5px;
+}
+
+.multiple-locations .next-button {
+  top: 32rem;
+  right: 5px;
+}
+
+.multiple-locations .about-container {
+  display: none;
+  flex-direction: column;
+}
+
+.multiple-locations .about-container:first-of-type {
+  display: flex;
 }
 
 /* Tablet */
@@ -773,7 +918,6 @@ fieldset p {
   /* Articles */
   .article {
     width: 70%;
-    margin: 0 auto;
   }
 }
 
@@ -947,6 +1091,10 @@ fieldset p {
     margin-left: 8rem;
   }
 
+  .about-copy h2 {
+    margin: 0;
+  }
+
   .content-callout-container button {
     margin-top: 4rem;
     width: 40%;
@@ -1053,8 +1201,34 @@ fieldset p {
   }
 
   /* Articles */
+  .article img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .article {
     width: 55%;
+  }
+
+  .thank-you-container {
+    width: 55%;
+    margin: 0 auto;
+  }
+
+  .multiple-locations .previous-button {
+    top: 25rem;
+    left: 15rem;
+  }
+
+  .multiple-locations .next-button {
+    top: 25rem;
+    right: 15rem;
+  }
+
+  .multiple-locations .about-container {
+    display: none;
+    flex-direction: row;
   }
 }
 
@@ -1081,6 +1255,10 @@ fieldset p {
 
   /* Articles */
   .article {
-    width: 50%;
+    width: 45%;
+  }
+
+  .thank-you-container {
+    width: 45%;
   }
 }
