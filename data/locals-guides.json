@@ -72,7 +72,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 3.25,
+    "rating": 3.0,
     "favorite": false,
     "address": [
       {
@@ -108,7 +108,7 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Lunch", "Dinner"],
-    "rating": 4.6,
+    "rating": 4.4,
     "favorite": false,
     "address": [
       {
@@ -122,13 +122,13 @@
         "website": "https://www.888cheeseandco.com/",
         "phone": "(920) 455-0097",
         "hours": [
-          "Closed",
-          "11:00am - 8:00pm",
-          "11:00am - 8:00pm",
-          "11:00am - 8:00pm",
           "11:00am - 9:00pm",
           "11:00am - 9:00pm",
-          "8:00am - 6:00pm"
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 6:00pm"
         ]
       }
     ],
@@ -145,7 +145,7 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Dinner"],
-    "rating": 3.8,
+    "rating": 3.7,
     "favorite": false,
     "address": [
       {
@@ -182,7 +182,7 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Lunch", "Dinner"],
-    "rating": 4.25,
+    "rating": 4,
     "favorite": false,
     "address": [
       {
@@ -218,7 +218,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 4.3,
+    "rating": 4.1,
     "favorite": false,
     "address": [
       {
@@ -294,7 +294,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Dinner", "Alcohol"],
-    "rating": 4.75,
+    "rating": 4.8,
     "favorite": true,
     "address": [
       {
@@ -331,7 +331,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 4.6,
+    "rating": 4.7,
     "favorite": false,
     "address": [
       {
@@ -475,7 +475,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 4.25,
+    "rating": 4.1,
     "favorite": false,
     "address": [
       {
@@ -547,7 +547,7 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Lunch", "Dinner", "Dessert"],
-    "rating": 4.0,
+    "rating": 3.8,
     "favorite": false,
     "address": [
       {
@@ -583,7 +583,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 4.1,
+    "rating": 4.0,
     "favorite": false,
     "address": [
       {
@@ -619,7 +619,7 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Lunch", "Dinner"],
-    "rating": 4.4,
+    "rating": 4.25,
     "favorite": false,
     "address": [
       {
@@ -656,7 +656,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 4.3,
+    "rating": 3.8,
     "favorite": false,
     "address": [
       {
@@ -728,7 +728,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol", "Coffee"],
-    "rating": 4.4,
+    "rating": 4.2,
     "favorite": false,
     "address": [
       {
@@ -764,7 +764,7 @@
     "secondaryAlt": null,
     "category": ["Drink"],
     "tags": ["Coffee"],
-    "rating": 4.1,
+    "rating": 3.9,
     "favorite": false,
     "address": [
       {
@@ -800,7 +800,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 4.25,
+    "rating": 4.4,
     "favorite": false,
     "address": [
       {
@@ -836,7 +836,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 3.75,
+    "rating": 3.5,
     "favorite": false,
     "address": [
       {
@@ -928,7 +928,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 3.25,
+    "rating": 2.5,
     "favorite": false,
     "address": [
       {
@@ -964,7 +964,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 4,
+    "rating": 3.9,
     "favorite": false,
     "address": [
       {
@@ -1001,7 +1001,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 3.75,
+    "rating": 3.25,
     "favorite": false,
     "address": [
       {
@@ -1037,7 +1037,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 4.25,
+    "rating": 4.1,
     "favorite": false,
     "address": [
       {
@@ -1073,7 +1073,7 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Lunch", "Dinner"],
-    "rating": 4.3,
+    "rating": 4.1,
     "favorite": false,
     "address": [
       {
@@ -1129,7 +1129,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 3.5,
+    "rating": 3.0,
     "favorite": false,
     "address": [
       {
@@ -1165,7 +1165,7 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Lunch", "Dinner"],
-    "rating": 3.75,
+    "rating": 3.5,
     "favorite": false,
     "address": [
       {
@@ -1202,7 +1202,7 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Lunch", "Dinner"],
-    "rating": 4.4,
+    "rating": 4.25,
     "favorite": false,
     "address": [
       {
@@ -1238,7 +1238,7 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Dinner"],
-    "rating": 3.6,
+    "rating": 3.0,
     "favorite": false,
     "address": [
       {
@@ -1275,7 +1275,7 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Breakfast", "Lunch", "Dinner"],
-    "rating": 4.3,
+    "rating": 3.9,
     "favorite": false,
     "address": [
       {
@@ -1351,7 +1351,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 3.75,
+    "rating": 3.0,
     "favorite": false,
     "address": [
       {
@@ -1460,7 +1460,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Dinner", "Alcohol"],
-    "rating": 4.4,
+    "rating": 4.2,
     "favorite": false,
     "address": [
       {
@@ -1496,7 +1496,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Dinner", "Alcohol"],
-    "rating": 4.4,
+    "rating": 4.2,
     "favorite": false,
     "address": [
       {
@@ -1533,7 +1533,7 @@
     "secondaryAlt": null,
     "category": ["Drink"],
     "tags": ["Coffee"],
-    "rating": 4.5,
+    "rating": 4.2,
     "favorite": false,
     "address": [
       {
@@ -1589,7 +1589,7 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Lunch", "Dinner"],
-    "rating": 4.5,
+    "rating": 4.4,
     "favorite": false,
     "address": [
       {
@@ -1625,7 +1625,7 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Lunch", "Dinner"],
-    "rating": 4.2,
+    "rating": 4.0,
     "favorite": false,
     "address": [
       {
@@ -1842,7 +1842,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 4.75,
+    "rating": 4.9,
     "favorite": true,
     "address": [
       {
@@ -1879,7 +1879,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 4.7,
+    "rating": 4.75,
     "favorite": false,
     "address": [
       {
@@ -1916,7 +1916,7 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Dessert"],
-    "rating": 4.75,
+    "rating": 4.6,
     "favorite": false,
     "address": [
       {
@@ -1952,7 +1952,7 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Dessert"],
-    "rating": 4.0,
+    "rating": 3.8,
     "favorite": false,
     "address": [
       {
@@ -2080,7 +2080,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 4.1,
+    "rating": 4.0,
     "favorite": false,
     "address": [
       {
@@ -2116,7 +2116,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 4.0,
+    "rating": 3.9,
     "favorite": false,
     "address": [
       {
@@ -2172,7 +2172,7 @@
     "secondaryAlt": null,
     "category": ["Drink"],
     "tags": ["Coffee"],
-    "rating": 4.1,
+    "rating": 4.0,
     "favorite": false,
     "address": [
       {
@@ -2244,7 +2244,7 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Lunch", "Dinner", "Dessert"],
-    "rating": 4.4,
+    "rating": 4.3,
     "favorite": false,
     "address": [
       {
