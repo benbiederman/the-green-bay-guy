@@ -517,7 +517,7 @@
       {
         "name": "Brickhouse Burgers and Brews",
         "image": "location/brickhouse-craft-burgers.jpg",
-        "alt": "Brickhouse Burgers and Brews deep fried cheesecurds",
+        "alt": "Brickhouse Burgers and Brews deep fried cheese curds",
         "street": "500 Grant St.",
         "city": "De Pere",
         "state": "WI",
@@ -1798,6 +1798,43 @@
     "searchTerms": ["Mexican"]
   },
   {
+    "id": 1071,
+    "title": "Olive's Pizza and Sandwiches",
+    "mainImg": "eat/olives-pizza.jpg",
+    "mainAlt": "A large pepperoni pizza from Olive's Pizza and Sandwiches",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.3,
+    "favorite": false,
+    "address": [
+      {
+        "name": "Olive's Pizza and Sandwiches",
+        "image": "location/olives-pizza.jpg",
+        "alt": "Olive's Pizza and Sandwiches signage",
+        "street": "516 Greene Ave.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54301",
+        "website": "https://olivespizzaandsandwiches.com/",
+        "phone": "(920) 492-0732",
+        "hours": [
+          "Closed",
+          "11:00am - 8:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 8:00pm"
+        ]
+      }
+    ],
+    "distance": 5.5,
+    "url": "olives-pizza-and-sandwiches",
+    "searchTerms": ["Pizza"]
+  },
+  {
     "id": 1066,
     "title": "Pepperboy Pizza",
     "mainImg": "eat/pepperboy-pizza.jpg",
@@ -2548,5 +2585,77 @@
     "distance": 7.7,
     "url": "uncle-mikes-bake-shoppe",
     "searchTerms": ["Kringle"]
+  },
+  {
+    "id": 1069,
+    "title": "Commando Paintball Sports",
+    "mainImg": "do/commando-paintball-sports.jpg",
+    "mainAlt": "A player on the course at Commando Paintball Sports playing paintball",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Do"],
+    "tags": ["Entertainment", "$$$"],
+    "rating": null,
+    "favorite": false,
+    "address": [
+      {
+        "name": "Commando Paintball Sports",
+        "image": "location/commando-paintball-sports.jpg",
+        "alt": "The Commando Paintball Sports course",
+        "street": "2055 W Frontier Rd.",
+        "city": "Little Suamico",
+        "state": "WI",
+        "zip": "54141",
+        "website": "https://www.commandopaintballsports.com/",
+        "phone": "(920) 826-5554",
+        "hours": [
+          "9:00am - 5:00pm",
+          "9:00am - 5:00pm",
+          "9:00am - 5:00pm",
+          "9:00am - 5:00pm",
+          "9:00am - 5:00pm",
+          "9:00am - 5:00pm",
+          "9:00am - 4:00pm"
+        ]
+      }
+    ],
+    "distance": 18.6,
+    "url": "commando-paintball-sports"
+  },
+  {
+    "id": 1070,
+    "title": "Scray Cheese",
+    "mainImg": "do/scray-cheese.jpg",
+    "mainAlt": "A bag of fresh, yellow cheese curds from Scray Cheese with their signage in the background.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Do"],
+    "tags": ["Shopping", "$$$"],
+    "rating": null,
+    "favorite": false,
+    "address": [
+      {
+        "name": "Scray Cheese",
+        "image": "location/scray-cheese.jpg",
+        "alt": "Scray Cheese's shop, with standing coolers full of cheese.",
+        "street": "2082 Old Martin Rd.",
+        "city": "De Pere",
+        "state": "WI",
+        "zip": "54115",
+        "website": "https://scraycheese.com/",
+        "phone": "(920) 347-0303",
+        "hours": [
+          "8:00am - 5:00pm",
+          "8:00am - 5:00pm",
+          "8:00am - 5:00pm",
+          "8:00am - 5:00pm",
+          "8:00am - 5:00pm",
+          "9:00am - 3:00pm",
+          "Closed"
+        ]
+      }
+    ],
+    "distance": 10.1,
+    "url": "scray-cheese"
   }
 ]
