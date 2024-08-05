@@ -956,6 +956,42 @@
     "url": "four-way-bar-and-restaurant"
   },
   {
+    "id": 1072,
+    "title": "Fox Harbor",
+    "mainImg": "eat/fox-harbor.jpg",
+    "mainAlt": "A buffalo chicken wrap with a large portion of crinkle cut french fries.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.4,
+    "favorite": false,
+    "address": [
+      {
+        "name": "Fox Harbor",
+        "image": "location/fox-harbor.jpg",
+        "alt": "Fox Harbor storefront",
+        "street": "348 S Washington St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54301",
+        "website": "https://foxharborpubandgrill.com/",
+        "phone": "(920) 593-8327",
+        "hours": [
+          "11:00am - 10:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 11:00pm",
+          "11:00am - 11:00pm",
+          "11:00am - 10:00pm"
+        ]
+      }
+    ],
+    "distance": 3.6,
+    "url": "fox-harbor"
+  },
+  {
     "id": 1027,
     "title": "Glass Nickel Pizza",
     "mainImg": "eat/glass-nickel-pizza.jpg",
