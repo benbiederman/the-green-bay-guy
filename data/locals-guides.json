@@ -2402,6 +2402,42 @@
     "url": "bay-beach"
   },
   {
+    "id": 1073,
+    "title": "Card and Coin",
+    "mainImg": "do/card-and-coin.jpg",
+    "mainAlt": "Card and Coin's shop interior showing numerous Packers items for sale.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Do"],
+    "tags": ["Shopping", "$$$"],
+    "rating": null,
+    "favorite": false,
+    "address": [
+      {
+        "name": "Card and Coin",
+        "image": "location/card-and-coin.jpg",
+        "alt": "Card and Coin storefront.",
+        "street": "2208 S Ridge Rd. #102",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304",
+        "website": "https://www.cardandcoingreenbay.com/",
+        "phone": "(920) 498-0050",
+        "hours": [
+          "10:00am - 6:00pm",
+          "10:00am - 6:00pm",
+          "10:00am - 6:00pm",
+          "Closed",
+          "10:00am - 6:00pm",
+          "10:00am - 3:00pm",
+          "Closed"
+        ]
+      }
+    ],
+    "distance": 0.8,
+    "url": "card-and-coin"
+  },
+  {
     "id": 1063,
     "title": "CityDeck",
     "mainImg": "do/citydeck.jpg",
