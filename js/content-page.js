@@ -10,7 +10,7 @@ const locationDetails = document.querySelector(".location-details");
 buildNavigation();
 
 // Fetch data
-let localsGuideData = await fetchData("/data/locals-guides.json");
+let localsGuideData = await fetchData("/data/content.json");
 
 // Assign current page data
 let path = window.location.pathname;
@@ -27,33 +27,22 @@ function generatePageInformation() {
 
   // Image
   const image = document.createElement("img");
-  image.src = `/assets/locals-guide/${currentPageData.mainImg}`;
+  image.src = `/assets/podcast/${currentPageData.mainImg}`;
   image.alt = currentPageData.mainAlt;
   article.prepend(image);
 
-  // Rating
-  if (currentPageData.rating) {
-    const rating = document.createElement("div");
-    rating.classList.add("rating");
-    article.appendChild(rating);
+  // Audio
+  if (currentPageData.audio) {
+    const audio = document.createElement("audio");
+    audio.controls = true;
+    article.appendChild(audio);
 
-    const container = document.createElement("div");
-    rating.appendChild(container);
-
-    const copy = document.createElement("p");
-    copy.textContent = "Rating";
-    container.appendChild(copy);
-
-    const score = document.createElement("p");
-    score.textContent = currentPageData.rating;
-    container.appendChild(score);
+    const audioSource = document.createElement("source");
+    audioSource.src = `/assets/audio/${currentPageData.audio}.wav`;
+    audio.appendChild(audioSource);
   }
 
   thankYouBanner();
-
-  if (currentPageData?.address?.length > 0) {
-    locationInformation(locationDetails, currentPageData.address);
-  }
 
   let recommendations = contentRecommendation(localsGuideData, currentPageData);
 
