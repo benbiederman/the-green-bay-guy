@@ -1309,6 +1309,10 @@ audio::-webkit-media-controls-play-button {
     width: 60%;
   }
 
+  .filter-options {
+    padding-bottom: 7rem;
+  }
+
   .filters-active .content-articles-header {
     width: 75%;
   }

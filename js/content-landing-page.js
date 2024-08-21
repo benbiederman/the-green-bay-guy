@@ -180,16 +180,29 @@ function categoryHandler(container, category) {
       const swipeDistance = Math.abs(touchStart - touchEnd);
 
       if (swipeDistance > minSwipeDistance) {
-        handleSwipe(touchStart, touchEnd, container, category);
+        if (touchStart > touchEnd) {
+          handleSwipe("right", container, category);
+        } else if (touchEnd > touchStart) {
+          handleSwipe("left", container, category);
+        }
+      }
+    });
+
+    container.addEventListener("keydown", (e) => {
+      if (e.key === "Tab" && e.shiftKey !== true) {
+        handleSwipe("right", container, category);
+      }
+      if (e.key === "Tab" && e.shiftKey === true) {
+        handleSwipe("left", container, category);
       }
     });
   }
 }
 
-function handleSwipe(start, end, container, category) {
+function handleSwipe(direction, container, category) {
   let episodes = container.children;
 
-  if (start > end) {
+  if (direction === "right") {
     if (category.counter < episodes.length - 1) {
       episodes[category.counter].classList.remove("item-active");
       episodes[category.counter].classList.add("item-inactive");
@@ -197,7 +210,7 @@ function handleSwipe(start, end, container, category) {
     }
   }
 
-  if (end > start) {
+  if (direction === "left") {
     if (category.counter > 0) {
       category.counter -= 1;
       episodes[category.counter].classList.remove("item-inactive");
