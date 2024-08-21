@@ -2,11 +2,15 @@ export function contentItem(heading, container, item) {
   let screenYheight = window.innerHeight;
   let path = window.location.pathname;
 
-  let contentType = item?.auto ? "podcast" : "locals-guide";
+  let contentType = item?.audio ? "podcast" : "locals-guide";
 
   //   Create article container
   const article = document.createElement("article");
-  article.classList.add("locals-guide-article");
+  if (contentType === "locals-guide") {
+    article.classList.add("locals-guide-article");
+  } else {
+    article.classList.add("content-item", "item-active");
+  }
   article.tabIndex = 0;
   article.ariaLabel = `${item.title}, ${
     item.rating ? item.rating + " rating" : ""
@@ -39,7 +43,7 @@ export function contentItem(heading, container, item) {
     img.src = `../assets/${contentType}/${item.mainImg}`;
     img.alt = item.mainAlt;
   }
-  img.width = "400";
+  img.width = contentType === "podcast" ? "330" : "400";
   img.height = "250";
   if (itemYPosition > screenYheight) {
     img.loading = "lazy";
@@ -47,17 +51,23 @@ export function contentItem(heading, container, item) {
   article.appendChild(img);
 
   const articleInformation = document.createElement("div");
-  articleInformation.classList.add("article-information");
+  articleInformation.classList.add(
+    contentType === "podcast" ? "episode-information" : "article-information"
+  );
   article.appendChild(articleInformation);
 
   if (item.tags) {
     const articleTags = document.createElement("div");
-    articleTags.classList.add("article-tags");
+    articleTags.classList.add(
+      contentType === "podcast" ? "episode-tags" : "article-tags"
+    );
     articleInformation.appendChild(articleTags);
 
     item.tags.forEach((tag) => {
       const articleTag = document.createElement("div");
-      articleTag.classList.add("article-tag");
+      articleTag.classList.add(
+        contentType === "podcast" ? "episode-tag" : "article-tag"
+      );
       articleTag.style.backgroundColor = generateTagColor(tag);
 
       const tagCopy = document.createElement("span");
@@ -89,12 +99,12 @@ export function contentItem(heading, container, item) {
 
   // Content Item handlers
   article.addEventListener("click", (e) => {
-    window.location.href = `/${contentType}/${item.url}.html`;
+    window.location.href = `/${item.url}.html`;
   });
 
   article.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
-      window.location.href = `/${contentType}/${item.url}.html`;
+      window.location.href = `/${item.url}.html`;
     }
   });
 }
@@ -127,6 +137,12 @@ function generateTagColor(tag) {
       return "#056071";
     case "Player":
       return "#35532D";
+    case "GB Narrative":
+      return "#000";
+    case "Season One":
+      return "#595959";
+    case "Season Two":
+      return "#9A3737";
     default:
       return "#000";
   }

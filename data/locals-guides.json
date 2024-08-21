@@ -13,7 +13,7 @@
     "favorite": false,
     "address": null,
     "distance": null,
-    "url": "green-bay-hotel-guide"
+    "url": "locals-guide/green-bay-hotel-guide"
   },
   {
     "id": 1003,
@@ -29,7 +29,7 @@
     "favorite": false,
     "address": null,
     "distance": null,
-    "url": "lambeau-field-parking-guide"
+    "url": "locals-guide/lambeau-field-parking-guide"
   },
   {
     "id": 1004,
@@ -45,7 +45,7 @@
     "favorite": false,
     "address": null,
     "distance": null,
-    "url": "lambeau-field-tailgating-guide"
+    "url": "locals-guide/lambeau-field-tailgating-guide"
   },
   {
     "id": 1001,
@@ -61,7 +61,7 @@
     "favorite": false,
     "address": null,
     "distance": null,
-    "url": "green-bay-packers-ticket-guide"
+    "url": "locals-guide/green-bay-packers-ticket-guide"
   },
   {
     "id": 1005,
@@ -97,7 +97,7 @@
       }
     ],
     "distance": 0,
-    "url": "1919-kitchen-and-tap"
+    "url": "locals-guide/1919-kitchen-and-tap"
   },
   {
     "id": 1006,
@@ -133,7 +133,7 @@
       }
     ],
     "distance": 10.1,
-    "url": "888-cheese-and-co",
+    "url": "locals-guide/888-cheese-and-co",
     "searchTerms": ["Grilled cheese"]
   },
   {
@@ -170,7 +170,7 @@
       }
     ],
     "distance": 4.5,
-    "url": "aldos-pizza",
+    "url": "locals-guide/aldos-pizza",
     "searchTerms": ["Pizza"]
   },
   {
@@ -207,7 +207,7 @@
       }
     ],
     "distance": 3.3,
-    "url": "als-hamburger"
+    "url": "locals-guide/als-hamburger"
   },
   {
     "id": 1009,
@@ -283,7 +283,7 @@
       }
     ],
     "distance": 0.8,
-    "url": "anduzzis"
+    "url": "locals-guide/anduzzis"
   },
   {
     "id": 1010,
@@ -319,7 +319,7 @@
       }
     ],
     "distance": 3.4,
-    "url": "angelina",
+    "url": "locals-guide/angelina",
     "searchTerms": ["Italian"]
   },
   {
@@ -356,7 +356,7 @@
       }
     ],
     "distance": 19.8,
-    "url": "basils-ii"
+    "url": "locals-guide/basils-ii"
   },
   {
     "id": 1012,
@@ -392,7 +392,7 @@
       }
     ],
     "distance": 1.2,
-    "url": "bay-family-restaurant"
+    "url": "locals-guide/bay-family-restaurant"
   },
   {
     "id": 1064,
@@ -428,7 +428,7 @@
       }
     ],
     "distance": 1.9,
-    "url": "bhava-coffee"
+    "url": "locals-guide/bhava-coffee"
   },
   {
     "id": 1013,
@@ -464,7 +464,7 @@
       }
     ],
     "distance": 6.7,
-    "url": "black-honey-hashery"
+    "url": "locals-guide/black-honey-hashery"
   },
   {
     "id": 1014,
@@ -500,7 +500,7 @@
       }
     ],
     "distance": 15.1,
-    "url": "black-sheep-pub-and-grill"
+    "url": "locals-guide/black-sheep-pub-and-grill"
   },
   {
     "id": 1015,
@@ -536,7 +536,7 @@
       }
     ],
     "distance": 5.4,
-    "url": "brickhouse-burgers-and-brews"
+    "url": "locals-guide/brickhouse-burgers-and-brews"
   },
   {
     "id": 1016,
@@ -572,7 +572,7 @@
       }
     ],
     "distance": 0.7,
-    "url": "cheese-cake-heaven"
+    "url": "locals-guide/cheese-cake-heaven"
   },
   {
     "id": 1017,
@@ -608,7 +608,7 @@
       }
     ],
     "distance": 1.9,
-    "url": "cheesesteak-rebellion"
+    "url": "locals-guide/cheesesteak-rebellion"
   },
   {
     "id": 1018,
@@ -644,7 +644,7 @@
       }
     ],
     "distance": 5.7,
-    "url": "china-kitchen",
+    "url": "locals-guide/china-kitchen",
     "searchTerms": ["Chinese"]
   },
   {
@@ -681,7 +681,7 @@
       }
     ],
     "distance": 11.4,
-    "url": "chives"
+    "url": "locals-guide/chives"
   },
   {
     "id": 1020,
@@ -717,7 +717,7 @@
       }
     ],
     "distance": 5.5,
-    "url": "coffee-wizardz"
+    "url": "locals-guide/coffee-wizardz"
   },
   {
     "id": 1021,
@@ -753,7 +753,7 @@
       }
     ],
     "distance": 3.3,
-    "url": "copper-state-brewing-co"
+    "url": "locals-guide/copper-state-brewing-co"
   },
   {
     "id": 1022,
@@ -789,7 +789,7 @@
       }
     ],
     "distance": 3.3,
-    "url": "daily-buzz-espresso-bar"
+    "url": "locals-guide/daily-buzz-espresso-bar"
   },
   {
     "id": 1023,
@@ -825,7 +825,7 @@
       }
     ],
     "distance": 4.1,
-    "url": "drift-inn"
+    "url": "locals-guide/drift-inn"
   },
   {
     "id": 1024,
@@ -861,7 +861,7 @@
       }
     ],
     "distance": 5.7,
-    "url": "el-maya"
+    "url": "locals-guide/el-maya"
   },
   {
     "id": 1025,
@@ -917,7 +917,7 @@
       }
     ],
     "distance": 2.4,
-    "url": "el-sarape"
+    "url": "locals-guide/el-sarape"
   },
   {
     "id": 1026,
@@ -953,7 +953,7 @@
       }
     ],
     "distance": 11.3,
-    "url": "four-way-bar-and-restaurant"
+    "url": "locals-guide/four-way-bar-and-restaurant"
   },
   {
     "id": 1072,
@@ -989,7 +989,7 @@
       }
     ],
     "distance": 3.6,
-    "url": "fox-harbor"
+    "url": "locals-guide/fox-harbor"
   },
   {
     "id": 1027,
@@ -1025,7 +1025,7 @@
       }
     ],
     "distance": 3.2,
-    "url": "glass-nickel-pizza",
+    "url": "locals-guide/glass-nickel-pizza",
     "searchTerms": ["Pizza"]
   },
   {
@@ -1062,7 +1062,7 @@
       }
     ],
     "distance": 9.0,
-    "url": "graystone-ale-house"
+    "url": "locals-guide/graystone-ale-house"
   },
   {
     "id": 1029,
@@ -1098,7 +1098,7 @@
       }
     ],
     "distance": 0.7,
-    "url": "green-bay-distillery"
+    "url": "locals-guide/green-bay-distillery"
   },
   {
     "id": 1030,
@@ -1154,7 +1154,7 @@
       }
     ],
     "distance": 5.0,
-    "url": "green-tea-chinese"
+    "url": "locals-guide/green-tea-chinese"
   },
   {
     "id": 1031,
@@ -1190,7 +1190,7 @@
       }
     ],
     "distance": 3.6,
-    "url": "hagemeister-park"
+    "url": "locals-guide/hagemeister-park"
   },
   {
     "id": 1032,
@@ -1226,7 +1226,7 @@
       }
     ],
     "distance": 4.9,
-    "url": "happy-joes-pizza",
+    "url": "locals-guide/happy-joes-pizza",
     "searchTerms": ["Pizza"]
   },
   {
@@ -1263,7 +1263,7 @@
       }
     ],
     "distance": 14.3,
-    "url": "hill-top-cafe"
+    "url": "locals-guide/hill-top-cafe"
   },
   {
     "id": 1034,
@@ -1299,7 +1299,7 @@
       }
     ],
     "distance": 3.0,
-    "url": "jakes-pizza",
+    "url": "locals-guide/jakes-pizza",
     "searchTerms": ["Pizza"]
   },
   {
@@ -1376,7 +1376,7 @@
       }
     ],
     "distance": 5.3,
-    "url": "julies-cafe"
+    "url": "locals-guide/julies-cafe"
   },
   {
     "id": 1036,
@@ -1412,7 +1412,7 @@
       }
     ],
     "distance": 0.1,
-    "url": "krolls-west"
+    "url": "locals-guide/krolls-west"
   },
   {
     "id": 1037,
@@ -1448,7 +1448,7 @@
       }
     ],
     "distance": 6.0,
-    "url": "legend-larrys",
+    "url": "locals-guide/legend-larrys",
     "searchTerms": ["Wings"]
   },
   {
@@ -1485,7 +1485,7 @@
       }
     ],
     "distance": 5.1,
-    "url": "la-carreta"
+    "url": "locals-guide/la-carreta"
   },
   {
     "id": 1038,
@@ -1521,7 +1521,7 @@
       }
     ],
     "distance": 9.8,
-    "url": "luigis-italian-bistro"
+    "url": "locals-guide/luigis-italian-bistro"
   },
   {
     "id": 1065,
@@ -1557,7 +1557,7 @@
       }
     ],
     "distance": 9.8,
-    "url": "luigis-pizza-palace-ii",
+    "url": "locals-guide/luigis-pizza-palace-ii",
     "searchTerms": ["Pizza"]
   },
   {
@@ -1614,7 +1614,7 @@
       }
     ],
     "distance": 5.8,
-    "url": "luna-coffee-roasters"
+    "url": "locals-guide/luna-coffee-roasters"
   },
   {
     "id": 1040,
@@ -1650,7 +1650,7 @@
       }
     ],
     "distance": 2.0,
-    "url": "mac-and-cheese-shop"
+    "url": "locals-guide/mac-and-cheese-shop"
   },
   {
     "id": 1041,
@@ -1686,7 +1686,7 @@
       }
     ],
     "distance": 3.4,
-    "url": "mad-chicken"
+    "url": "locals-guide/mad-chicken"
   },
   {
     "id": 1042,
@@ -1722,7 +1722,7 @@
       }
     ],
     "distance": 5.2,
-    "url": "narrow-bridge"
+    "url": "locals-guide/narrow-bridge"
   },
   {
     "id": 1043,
@@ -1758,7 +1758,7 @@
       }
     ],
     "distance": 5.2,
-    "url": "nicolet-cafe"
+    "url": "locals-guide/nicolet-cafe"
   },
   {
     "id": 1044,
@@ -1794,7 +1794,7 @@
       }
     ],
     "distance": 2.3,
-    "url": "not-by-bread-alone"
+    "url": "locals-guide/not-by-bread-alone"
   },
   {
     "id": 1045,
@@ -1830,7 +1830,7 @@
       }
     ],
     "distance": 7.8,
-    "url": "old-mexico",
+    "url": "locals-guide/old-mexico",
     "searchTerms": ["Mexican"]
   },
   {
@@ -1867,7 +1867,7 @@
       }
     ],
     "distance": 5.5,
-    "url": "olives-pizza-and-sandwiches",
+    "url": "locals-guide/olives-pizza-and-sandwiches",
     "searchTerms": ["Pizza"]
   },
   {
@@ -1904,7 +1904,7 @@
       }
     ],
     "distance": 3.8,
-    "url": "pepperboy-pizza"
+    "url": "locals-guide/pepperboy-pizza"
   },
   {
     "id": 1047,
@@ -1940,7 +1940,7 @@
       }
     ],
     "distance": 11.2,
-    "url": "rustique-pizzeria",
+    "url": "locals-guide/rustique-pizzeria",
     "searchTerms": ["Pizza"]
   },
   {
@@ -1977,7 +1977,7 @@
       }
     ],
     "distance": 0.9,
-    "url": "sammys-pizza",
+    "url": "locals-guide/sammys-pizza",
     "searchTerms": ["Pizza"]
   },
   {
@@ -2014,7 +2014,7 @@
       }
     ],
     "distance": 1.6,
-    "url": "saras-artisan-gelato"
+    "url": "locals-guide/saras-artisan-gelato"
   },
   {
     "id": 1051,
@@ -2070,7 +2070,7 @@
       }
     ],
     "distance": 1.3,
-    "url": "smart-cow",
+    "url": "locals-guide/smart-cow",
     "searchTerms": ["Frozen yogurt"]
   },
   {
@@ -2107,7 +2107,7 @@
       }
     ],
     "distance": 0.7,
-    "url": "stadium-view"
+    "url": "locals-guide/stadium-view"
   },
   {
     "id": 1053,
@@ -2142,7 +2142,7 @@
       }
     ],
     "distance": 3.3,
-    "url": "stir-ups-bar"
+    "url": "locals-guide/stir-ups-bar"
   },
   {
     "id": 1054,
@@ -2178,7 +2178,7 @@
       }
     ],
     "distance": 5.5,
-    "url": "the-abbey"
+    "url": "locals-guide/the-abbey"
   },
   {
     "id": 1055,
@@ -2234,7 +2234,7 @@
       }
     ],
     "distance": 0.8,
-    "url": "the-bar"
+    "url": "locals-guide/the-bar"
   },
   {
     "id": 1056,
@@ -2270,7 +2270,7 @@
       }
     ],
     "distance": 2.2,
-    "url": "the-exchange"
+    "url": "locals-guide/the-exchange"
   },
   {
     "id": 1057,
@@ -2306,7 +2306,7 @@
       }
     ],
     "distance": 2.2,
-    "url": "the-pancake-place"
+    "url": "locals-guide/the-pancake-place"
   },
   {
     "id": 1058,
@@ -2362,7 +2362,7 @@
       }
     ],
     "distance": 5.4,
-    "url": "zestys",
+    "url": "locals-guide/zestys",
     "searchTerms": ["Custard"]
   },
   {
@@ -2399,7 +2399,7 @@
       }
     ],
     "distance": 6.1,
-    "url": "bay-beach"
+    "url": "locals-guide/bay-beach"
   },
   {
     "id": 1073,
@@ -2435,7 +2435,7 @@
       }
     ],
     "distance": 0.8,
-    "url": "card-and-coin"
+    "url": "locals-guide/card-and-coin"
   },
   {
     "id": 1063,
@@ -2471,7 +2471,7 @@
       }
     ],
     "distance": 3.4,
-    "url": "citydeck"
+    "url": "locals-guide/citydeck"
   },
   {
     "id": 1059,
@@ -2507,7 +2507,7 @@
       }
     ],
     "distance": 0,
-    "url": "lambeau-field"
+    "url": "locals-guide/lambeau-field"
   },
   {
     "id": 1060,
@@ -2543,7 +2543,7 @@
       }
     ],
     "distance": null,
-    "url": "packers-heritage-trail"
+    "url": "locals-guide/packers-heritage-trail"
   },
   {
     "id": 1061,
@@ -2579,7 +2579,7 @@
       }
     ],
     "distance": 0.1,
-    "url": "titletown-district"
+    "url": "locals-guide/titletown-district"
   },
   {
     "id": 1067,
@@ -2655,7 +2655,7 @@
       }
     ],
     "distance": 7.7,
-    "url": "uncle-mikes-bake-shoppe",
+    "url": "locals-guide/uncle-mikes-bake-shoppe",
     "searchTerms": ["Kringle"]
   },
   {
@@ -2692,7 +2692,7 @@
       }
     ],
     "distance": 18.6,
-    "url": "commando-paintball-sports"
+    "url": "locals-guide/commando-paintball-sports"
   },
   {
     "id": 1070,
@@ -2728,6 +2728,6 @@
       }
     ],
     "distance": 10.1,
-    "url": "scray-cheese"
+    "url": "locals-guide/scray-cheese"
   }
 ]

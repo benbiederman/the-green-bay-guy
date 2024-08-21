@@ -9,8 +9,6 @@ import { contentItem } from "./component/contentItem.js";
 import { buildNavigation } from "./component/header.js";
 import { buildFooter } from "./component/footer.js";
 const contentContainer = document.querySelector(".content-articles-container");
-const path = window.location.pathname.split("/")[2].split(".")[0];
-const category = path.charAt(0).toUpperCase() + path.slice(1);
 const results = document.querySelector(".results-counter");
 const filterToggle = document.querySelector(".filters-button") || null;
 const closeButton = document.querySelector(".close-button") || null;
@@ -30,7 +28,43 @@ const noResults = document.querySelector(".no-results");
 buildNavigation();
 buildFooter();
 
-let localsGuideData = await fetchData("/data/locals-guides.json");
+const path = window.location.pathname;
+let contentType;
+
+// Sets contentType and returns source for data
+function getData(pagePath) {
+  if (pagePath.includes("locals-guide")) {
+    contentType = "local's guide";
+    return "/data/locals-guides.json";
+  } else if (pagePath.includes("the-green-bay-narrative")) {
+    contentType = "podcast";
+    return "/data/content.json";
+  } else if (pagePath.includes("green-bay-rewind")) {
+    contentType = "podcast";
+    return "/data/content.json";
+  }
+}
+
+// Set Category to show which data gets rendered on page
+function setCategory(path) {
+  if (path.includes("eat")) {
+    return "Eat";
+  } else if (path.includes("drink")) {
+    return "Drink";
+  } else if (path.includes("do")) {
+    return "Do";
+  } else if (path.includes("misc")) {
+    return "Misc";
+  } else if (path.includes("the-green-bay-narrative")) {
+    return "Podcast";
+  } else if (path.includes("green-bay-rewind")) {
+    return "Live";
+  }
+}
+
+let dataSource = getData(path);
+
+let localsGuideData = await fetchData(dataSource);
 
 if (localsGuideData && localsGuideData?.length > 0) {
   renderContent(localsGuideData);
@@ -62,11 +96,15 @@ function renderContent(data) {
   let allData = [...data];
   let categoryData = [];
 
+  const category = setCategory(path);
+
   // Sort data
-  if (category === "Eat") {
-    allData = sortByRating(allData);
-  } else {
-    allData = sortAlphabetically(allData);
+  if (contentType === "local's guide") {
+    if (category === "Eat") {
+      allData = sortByRating(allData);
+    } else {
+      allData = sortAlphabetically(allData);
+    }
   }
 
   //Add items that match page category to categoryData
