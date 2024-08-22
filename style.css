@@ -901,6 +901,13 @@ fieldset p {
   transition: left 0.25s ease;
   width: 330px;
   height: 375px;
+  display: flex;
+  align-items: center;
+  padding-top: 8rem;
+  background-image: url(/assets/podcast/more-episodes.jpg);
+  background-position: center;
+  background-size: cover;
+  font-size: 2rem;
 }
 
 .item-inactive {
