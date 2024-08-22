@@ -4,6 +4,8 @@ import { sortByTagsAndRating } from "./helpers/filterData.js";
 import { buildNavigation } from "./component/header.js";
 import { buildFooter } from "./component/footer.js";
 
+buildNavigation();
+
 const homepageHeroCTA = document.querySelector(".homepage-hero-content button");
 const goToButton = document.querySelector(".go-to-button");
 let localsGuideData = await fetchData("./data/locals-guides.json");
@@ -19,6 +21,8 @@ goToButton.addEventListener("click", () => {
 if (localsGuideData && localsGuideData?.length > 0) {
   generateGuideData(localsGuideData);
 }
+
+buildFooter();
 
 function generateGuideData(data) {
   const miscContainer = document.querySelector(".misc-articles-container");
@@ -48,6 +52,3 @@ function generateGuideData(data) {
     });
   }
 }
-
-buildNavigation();
-buildFooter();
