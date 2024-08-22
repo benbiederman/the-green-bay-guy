@@ -26,7 +26,6 @@ const distanceDropdown =
 const noResults = document.querySelector(".no-results");
 
 buildNavigation();
-buildFooter();
 
 const path = window.location.pathname;
 let contentType;
@@ -91,6 +90,8 @@ if (localsGuideData && localsGuideData?.length > 0) {
   contentContainer.style.display = "none";
   noResults.style.display = "flex";
 }
+
+buildFooter();
 
 function renderContent(data) {
   let allData = [...data];

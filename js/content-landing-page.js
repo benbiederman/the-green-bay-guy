@@ -5,7 +5,6 @@ import { contentItem } from "./component/contentItem.js";
 const content = document.querySelector(".content");
 
 buildNavigation();
-buildFooter();
 
 // Fetch data
 let contentData = await fetchData("/data/content.json");
@@ -47,14 +46,6 @@ function isNewEpisode(date) {
   return differenceInDays < 30;
 }
 
-// trendingEpisodes.forEach((episode) => {
-//   contentItem("h3", trendingContent, episode);
-// });
-
-// gbNarrativeEpisodes.forEach((episode) => {
-//   contentItem("h3", gbnContent, episode);
-// });
-
 const categories = [
   {
     header: "New releases",
@@ -78,6 +69,8 @@ const categories = [
 
 // Generate each category
 generateCategories();
+
+buildFooter();
 
 function buildSection(category) {
   // Each categry section

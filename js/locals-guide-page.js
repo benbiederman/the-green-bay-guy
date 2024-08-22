@@ -19,6 +19,8 @@ let currentPageData = localsGuideData.find((guide) => path.includes(guide.url));
 // Generate main image, rating, locations, and recommended articles
 generatePageInformation();
 
+buildFooter();
+
 function generatePageInformation() {
   const article = document.querySelector(".article");
   const recommendationContainer = document.querySelector(
@@ -61,5 +63,3 @@ function generatePageInformation() {
     contentItem("h3", recommendationContainer, item);
   });
 }
-
-buildFooter();
