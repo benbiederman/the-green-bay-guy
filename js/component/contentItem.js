@@ -98,15 +98,27 @@ export function contentItem(heading, container, item) {
   articleInformation.appendChild(moreInfo);
 
   // Content Item handlers
-  article.addEventListener("click", (e) => {
-    window.location.href = `/${item.url}.html`;
-  });
+  if (item.url.includes("http")) {
+    article.addEventListener("click", (e) => {
+      window.open(item.url);
+    });
 
-  article.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
+    article.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        window.open(item.url);
+      }
+    });
+  } else {
+    article.addEventListener("click", (e) => {
       window.location.href = `/${item.url}.html`;
-    }
-  });
+    });
+
+    article.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        window.location.href = `/${item.url}.html`;
+      }
+    });
+  }
 }
 
 function generateTagColor(tag) {
