@@ -154,6 +154,14 @@ main {
   width: 100%;
 }
 
+.giveaway-container h2 {
+  margin-top: 3rem;
+}
+
+.giveaway-container li {
+  margin: 1rem 0;
+}
+
 .container-with-copy p {
   margin: 2rem 0;
   line-height: 1.5;
