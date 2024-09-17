@@ -1689,6 +1689,42 @@
     "url": "locals-guide/mad-chicken"
   },
   {
+    "id": 1077,
+    "title": "Mexico Lindo",
+    "mainImg": "eat/mexico-lindo.jpg",
+    "mainAlt": "Mexico Lindo's Fajita Burrito. A burrito topped with chipotle cheese dip and romaine lettuce.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 3.8,
+    "favorite": false,
+    "address": [
+      {
+        "name": "Mexico Lindo",
+        "image": "location/mexico-lindo.jpg",
+        "alt": "Mexico Lindo storefront with signage.",
+        "street": "445 Cardinal Ln.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54313",
+        "website": "https://www.facebook.com/mexicolindogb/",
+        "phone": "(920) 544-0259",
+        "hours": [
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 9:00pm"
+        ]
+      }
+    ],
+    "distance": 4.7,
+    "url": "locals-guide/mexico-lindo"
+  },
+  {
     "id": 1042,
     "title": "Narrow Bridge",
     "mainImg": "eat/narrow-bridge.jpg",
@@ -2823,5 +2859,41 @@
     "address": null,
     "distance": 1.7,
     "url": "https://www.simon.com/mall/bay-park-square"
+  },
+  {
+    "id": 1078,
+    "title": "LoCo WisCo",
+    "mainImg": "do/loco-wisco.jpg",
+    "mainAlt": "A display of Wisconsin themed goods, including shirts, art, and books.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Do"],
+    "tags": ["Shopping", "$$$"],
+    "rating": null,
+    "favorite": false,
+    "address": [
+      {
+        "name": "LoCo WisCo",
+        "image": "location/loco-wisco.jpg",
+        "alt": "LoCo WisCo storefront signage with an open door showing their merchandise.",
+        "street": "112 N Washington St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54301",
+        "website": "https://www.locowisco.com/",
+        "phone": "(920) 489-8122",
+        "hours": [
+          "10:00am - 5:00pm",
+          "10:00am - 5:00pm",
+          "10:00am - 5:00pm",
+          "10:00am - 5:00pm",
+          "10:00am - 5:00pm",
+          "8:00am - 5:00pm",
+          "Closed"
+        ]
+      }
+    ],
+    "distance": 14.0,
+    "url": "locals-guide/loco-wisco"
   }
 ]
