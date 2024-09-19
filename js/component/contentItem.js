@@ -2,7 +2,18 @@ export function contentItem(heading, container, item) {
   let screenYheight = window.innerHeight;
   let path = window.location.pathname;
 
-  let contentType = item?.audio ? "podcast" : "locals-guide";
+  let contentType = defineType(item);
+
+  function defineType(item) {
+    switch (item.show) {
+      case "Green Bay Rewind":
+        return "live";
+      case "The Green Bay Narrative":
+        return "podcast";
+      default:
+        return "locals-guide";
+    }
+  }
 
   //   Create article container
   const article = document.createElement("article");
@@ -43,7 +54,7 @@ export function contentItem(heading, container, item) {
     img.src = `../assets/${contentType}/${item.mainImg}`;
     img.alt = item.mainAlt;
   }
-  img.width = contentType === "podcast" ? "330" : "400";
+  img.width = contentType === "podcast" || "live" ? "330" : "400";
   img.height = "250";
   if (itemYPosition > screenYheight) {
     img.loading = "lazy";
@@ -52,21 +63,24 @@ export function contentItem(heading, container, item) {
 
   const articleInformation = document.createElement("div");
   articleInformation.classList.add(
-    contentType === "podcast" ? "episode-information" : "article-information"
+    contentType === "locals-guide"
+      ? "article-information"
+      : "episode-information"
   );
+
   article.appendChild(articleInformation);
 
   if (item.tags) {
     const articleTags = document.createElement("div");
     articleTags.classList.add(
-      contentType === "podcast" ? "episode-tags" : "article-tags"
+      contentType === "locals-guide" ? "article-tags" : "episode-tags"
     );
     articleInformation.appendChild(articleTags);
 
     item.tags.forEach((tag) => {
       const articleTag = document.createElement("div");
       articleTag.classList.add(
-        contentType === "podcast" ? "episode-tag" : "article-tag"
+        contentType === "locals-guide" ? "article-tag" : "episode-tag"
       );
       articleTag.style.backgroundColor = generateTagColor(tag);
 
@@ -88,6 +102,8 @@ export function contentItem(heading, container, item) {
   const moreInfo = document.createElement("p");
   if (contentType === "podcast") {
     moreInfo.textContent = `Listen to episode ${item.episodeNumber} now`;
+  } else if (contentType === "live") {
+    moreInfo.textContent = `Watch episode ${item.episodeNumber} now`;
   } else {
     if (item.distance) {
       moreInfo.textContent = `${item.distance} miles from Lambeau Field`;
