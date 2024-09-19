@@ -11,6 +11,7 @@ let contentData = await fetchData("/data/content.json");
 let trendingEpisodes = [];
 let newEpisodes = [];
 let gbNarrativeEpisodes = [];
+let gbRewindEpisodes = [];
 
 contentData.forEach((item) => {
   // Trending episodes
@@ -20,7 +21,12 @@ contentData.forEach((item) => {
 
   // Episodes released in previous 30 days
   if (isNewEpisode(item.releaseDate)) {
-    newEpisodes.push(item);
+    newEpisodes.unshift(item);
+  }
+
+  // Green Bay Rewind Episodes
+  if (item.show === "Green Bay Rewind") {
+    gbRewindEpisodes.push(item);
   }
 
   // Green Bay Narrative Episodes
@@ -56,6 +62,12 @@ const categories = [
   {
     header: "Trending",
     data: trendingEpisodes,
+    counter: 0,
+    overflowURL: null,
+  },
+  {
+    header: "Green Bay Rewind",
+    data: gbRewindEpisodes,
     counter: 0,
     overflowURL: null,
   },
@@ -99,6 +111,7 @@ function buildSection(category) {
 
   // Content container
   const slider = document.createElement("div");
+  const length = category.data.length > 4 ? 4 : category.data.length;
   slider.classList.add(
     "content-slider-container",
     `${category.header.toLowerCase().split(" ").join("-")}-content`
@@ -110,7 +123,7 @@ function buildSection(category) {
   );
 
   // Create episodes
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < length; i++) {
     contentItem("h3", categoryContainer, category.data[i]);
   }
 
