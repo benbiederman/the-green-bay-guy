@@ -503,6 +503,42 @@
     "url": "locals-guide/black-sheep-pub-and-grill"
   },
   {
+    "id": 1079,
+    "title": "The Booyah Shed",
+    "mainImg": "eat/booyah-shed.jpg",
+    "mainAlt": "A bacon cheeseburger with a side of deep fried cheesecurds from Booyah Shed.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 3.9,
+    "favorite": false,
+    "address": [
+      {
+        "name": "The Booyah Shed",
+        "image": "location/booyah-shed.jpg",
+        "alt": "The Booyah Shed's storefront with signage",
+        "street": "1800 S Ashland Ave #3702",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304",
+        "website": "https://www.facebook.com/TheBooyahShed/",
+        "phone": "(920) 371-6249",
+        "hours": [
+          "11:00am - 5:00pm",
+          "11:00am - 7:00pm",
+          "11:00am - 7:00pm",
+          "11:00am - 7:00pm",
+          "11:00am - 8:00pm",
+          "11:00am - 7:00pm",
+          "Closed"
+        ]
+      }
+    ],
+    "distance": 1.4,
+    "url": "locals-guide/the-booyah-shed"
+  },
+  {
     "id": 1015,
     "title": "Brickhouse Burgers and Brews",
     "mainImg": "eat/brickhouse-craft-burgers.jpg",
@@ -1266,6 +1302,42 @@
     "url": "locals-guide/hill-top-cafe"
   },
   {
+    "id": 1080,
+    "title": "Hinterland Brewery",
+    "mainImg": "eat/hinterland-brewery.jpg",
+    "mainAlt": "Hinterland Brewery's woodfired pizza.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.1,
+    "favorite": false,
+    "address": [
+      {
+        "name": "Hinterland Brewery",
+        "image": "location/hinterland-brewery.jpg",
+        "alt": "Hinterland Brewery's storefront with signage",
+        "street": "1001 Lombardi Access Rd.",
+        "city": "Ashwaubenon",
+        "state": "WI",
+        "zip": "54304",
+        "website": "https://hinterlandbeer.com/",
+        "phone": "(920) 438-8050",
+        "hours": [
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 8:00pm"
+        ]
+      }
+    ],
+    "distance": 0.3,
+    "url": "locals-guide/hinterland-brewery"
+  },
+  {
     "id": 1034,
     "title": "Jake's Pizza",
     "mainImg": "eat/jakes-pizza.jpg",
@@ -1496,7 +1568,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Dinner", "Alcohol"],
-    "rating": 4.2,
+    "rating": 3.9,
     "favorite": false,
     "address": [
       {
@@ -1532,7 +1604,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Dinner", "Alcohol"],
-    "rating": 4.2,
+    "rating": 3.9,
     "favorite": false,
     "address": [
       {
@@ -1878,7 +1950,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 4.3,
+    "rating": 4.1,
     "favorite": false,
     "address": [
       {
@@ -1905,42 +1977,6 @@
     "distance": 5.5,
     "url": "locals-guide/olives-pizza-and-sandwiches",
     "searchTerms": ["Pizza"]
-  },
-  {
-    "id": 1066,
-    "title": "Pepperboy Pizza",
-    "mainImg": "eat/pepperboy-pizza.jpg",
-    "mainAlt": "Pepperboy Pizza's woodfire pepperoni pizza",
-    "secondaryImg": null,
-    "secondaryAlt": null,
-    "category": ["Eat"],
-    "tags": ["Dinner"],
-    "rating": 4.2,
-    "favorite": false,
-    "address": [
-      {
-        "name": "Pepperboy Pizza",
-        "image": "location/pepperboy-pizza.jpg",
-        "alt": "Pepperboy Pizza's building, showing two exhaust stacks",
-        "street": "815 Chicago St.",
-        "city": "Green Bay",
-        "state": "WI",
-        "zip": "54301",
-        "website": "https://pepperboy.com/",
-        "phone": null,
-        "hours": [
-          "Closed",
-          "Closed",
-          "4:00pm - 8:00pm",
-          "4:00pm - 8:00pm",
-          "4:00pm - 9:00pm",
-          "4:00pm - 9:00pm",
-          "3:30pm - 8:00pm"
-        ]
-      }
-    ],
-    "distance": 3.8,
-    "url": "locals-guide/pepperboy-pizza"
   },
   {
     "id": 1047,
