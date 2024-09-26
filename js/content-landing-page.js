@@ -69,7 +69,7 @@ const categories = [
     header: "Green Bay Rewind",
     data: gbRewindEpisodes,
     counter: 0,
-    overflowURL: null,
+    overflowURL: "green-bay-rewind",
   },
   {
     header: "The Green Bay Narrative",
