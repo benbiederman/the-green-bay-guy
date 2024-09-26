@@ -714,7 +714,7 @@
     "show": "Green Bay Rewind"
   },
   {
-    "id": 3001,
+    "id": 3002,
     "title": "2024 Week Two",
     "mainImg": "2024-week-two.jpg",
     "mainAlt": "Green background with white lettering that says, 'Week Two, Colts vs Packers'",
@@ -725,6 +725,20 @@
     "tags": ["GB Rewind"],
     "trending": false,
     "releaseDate": "09/17/2024",
+    "show": "Green Bay Rewind"
+  },
+  {
+    "id": 3003,
+    "title": "2024 Week Three",
+    "mainImg": "2024-week-three.jpg",
+    "mainAlt": "Green background with white lettering that says, 'Week Three, Packers vs Titans'",
+    "episodeNumber": "03",
+    "url": "https://www.youtube.com/watch?v=WLypsxMdi7w",
+    "audio": null,
+    "category": ["Live"],
+    "tags": ["GB Rewind"],
+    "trending": false,
+    "releaseDate": "09/24/2024",
     "show": "Green Bay Rewind"
   }
 ]
