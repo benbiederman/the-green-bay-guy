@@ -740,5 +740,19 @@
     "trending": false,
     "releaseDate": "09/24/2024",
     "show": "Green Bay Rewind"
+  },
+  {
+    "id": 3004,
+    "title": "2024 Week Four",
+    "mainImg": "2024-week-four.jpg",
+    "mainAlt": "Green background with white lettering that says, 'Week Four, Vikings vs Packers'",
+    "episodeNumber": "04",
+    "url": "https://youtu.be/gYdSLJes0J8?si=yCTS1H9rMbrVUrzL",
+    "audio": null,
+    "category": ["Live"],
+    "tags": ["GB Rewind"],
+    "trending": false,
+    "releaseDate": "10/01/2024",
+    "show": "Green Bay Rewind"
   }
 ]
