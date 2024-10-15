@@ -1905,6 +1905,42 @@
     "url": "locals-guide/not-by-bread-alone"
   },
   {
+    "id": 1082,
+    "title": "Oakley's",
+    "mainImg": "eat/oakleys.jpg",
+    "mainAlt": "Oakley's pancake flight including four different pancakes.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Breakfast", "Lunch", "Alcohol"],
+    "rating": 4.1,
+    "favorite": false,
+    "address": [
+      {
+        "name": "Oakley's",
+        "image": "location/oakleys.jpg",
+        "alt": "Oakley's wall featuring their signage",
+        "street": "614 George S.",
+        "city": "De Pere",
+        "state": "WI",
+        "zip": "54115",
+        "website": "https://www.facebook.com/brunchattheoaks",
+        "phone": "(920) 425-4039",
+        "hours": [
+          "7:30am - 3:00pm",
+          "Closed",
+          "7:30am - 3:00pm",
+          "7:30am - 3:00pm",
+          "7:30am - 3:00pm",
+          "7:30am - 3:00pm",
+          "7:30am - 3:00pm"
+        ]
+      }
+    ],
+    "distance": 6.9,
+    "url": "locals-guide/oakleys"
+  },
+  {
     "id": 1045,
     "title": "Old Mexico",
     "mainImg": "eat/old-mexico.jpg",
@@ -2215,6 +2251,42 @@
     ],
     "distance": 3.3,
     "url": "locals-guide/stir-ups-bar"
+  },
+  {
+    "id": 1081,
+    "title": "Taqueria Maldonados",
+    "mainImg": "eat/taqueria-maldonados.jpg",
+    "mainAlt": "Buffalo chicken wrap with a side of fries.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 3.45,
+    "favorite": false,
+    "address": [
+      {
+        "name": "Taqueria Maldonados",
+        "image": "location/taqueria-maldonados.jpg",
+        "alt": "Taqueria Maldonado's signage in front of the store.",
+        "street": "1737 Main St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54302",
+        "website": "https://www.facebook.com/TaqueriaMaldonadosGB/",
+        "phone": "(920) 468-8730",
+        "hours": [
+          "10:00am - 8:00pm",
+          "10:00am - 8:00pm",
+          "10:00am - 8:00pm",
+          "10:00am - 8:00pm",
+          "10:00am - 9:00pm",
+          "10:00am - 9:00pm",
+          "10:00am - 8:00pm"
+        ]
+      }
+    ],
+    "distance": 5.5,
+    "url": "locals-guide/taqueria-maldonados"
   },
   {
     "id": 1054,

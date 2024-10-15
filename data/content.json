@@ -754,5 +754,19 @@
     "trending": false,
     "releaseDate": "10/01/2024",
     "show": "Green Bay Rewind"
+  },
+  {
+    "id": 3005,
+    "title": "2024 Week Five",
+    "mainImg": "2024-week-five.jpg",
+    "mainAlt": "Green background with white lettering that says, 'Week Five, Packers vs Rams'",
+    "episodeNumber": "05",
+    "url": "https://www.youtube.com/watch?v=5Cxbf7xjmBQ&t=29s",
+    "audio": null,
+    "category": ["Live"],
+    "tags": ["GB Rewind"],
+    "trending": false,
+    "releaseDate": "10/08/2024",
+    "show": "Green Bay Rewind"
   }
 ]
