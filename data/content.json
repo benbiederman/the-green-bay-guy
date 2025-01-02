@@ -710,7 +710,7 @@
     "category": ["Live"],
     "tags": ["GB Rewind"],
     "trending": false,
-    "releaseDate": "09/10/2024",
+    "releaseDate": "01/01/1900",
     "show": "Green Bay Rewind"
   },
   {
@@ -724,7 +724,7 @@
     "category": ["Live"],
     "tags": ["GB Rewind"],
     "trending": false,
-    "releaseDate": "09/17/2024",
+    "releaseDate": "01/01/1900",
     "show": "Green Bay Rewind"
   },
   {
@@ -738,7 +738,7 @@
     "category": ["Live"],
     "tags": ["GB Rewind"],
     "trending": false,
-    "releaseDate": "09/24/2024",
+    "releaseDate": "01/01/1900",
     "show": "Green Bay Rewind"
   },
   {
@@ -752,7 +752,7 @@
     "category": ["Live"],
     "tags": ["GB Rewind"],
     "trending": false,
-    "releaseDate": "10/01/2024",
+    "releaseDate": "01/01/1900",
     "show": "Green Bay Rewind"
   },
   {
@@ -766,7 +766,7 @@
     "category": ["Live"],
     "tags": ["GB Rewind"],
     "trending": false,
-    "releaseDate": "10/08/2024",
+    "releaseDate": "01/01/1900",
     "show": "Green Bay Rewind"
   },
   {
@@ -780,7 +780,7 @@
     "category": ["Live"],
     "tags": ["GB Rewind"],
     "trending": false,
-    "releaseDate": "10/15/2024",
+    "releaseDate": "01/01/1900",
     "show": "Green Bay Rewind"
   },
   {
@@ -794,7 +794,7 @@
     "category": ["Live"],
     "tags": ["GB Rewind"],
     "trending": false,
-    "releaseDate": "10/22/2024",
+    "releaseDate": "01/01/1900",
     "show": "Green Bay Rewind"
   },
   {
@@ -808,7 +808,7 @@
     "category": ["Live"],
     "tags": ["GB Rewind"],
     "trending": false,
-    "releaseDate": "10/29/2024",
+    "releaseDate": "01/01/1900",
     "show": "Green Bay Rewind"
   },
   {
@@ -822,7 +822,7 @@
     "category": ["Live"],
     "tags": ["GB Rewind"],
     "trending": false,
-    "releaseDate": "11/05/2024",
+    "releaseDate": "01/01/1900",
     "show": "Green Bay Rewind"
   },
   {
@@ -836,21 +836,91 @@
     "category": ["Live"],
     "tags": ["GB Rewind"],
     "trending": false,
-    "releaseDate": "11/12/2024",
+    "releaseDate": "01/01/1900",
     "show": "Green Bay Rewind"
   },
   {
-    "id": 3009,
+    "id": 3011,
     "title": "2024 Week Eleven",
     "mainImg": "2024-week-eleven.jpg",
     "mainAlt": "Green background with white lettering that says, 'Week Eleven, Packers vs Bears'",
-    "episodeNumber": "1",
+    "episodeNumber": "11",
     "url": "https://youtu.be/HLHXBR1sKZQ?si=fXX16S5bDoZBoQ4B",
     "audio": null,
     "category": ["Live"],
     "tags": ["GB Rewind"],
     "trending": false,
-    "releaseDate": "11/19/2024",
+    "releaseDate": "01/01/1900",
+    "show": "Green Bay Rewind"
+  },
+  {
+    "id": 3012,
+    "title": "2024 Week Twelve",
+    "mainImg": "2024-week-twelve.jpg",
+    "mainAlt": "Green background with white lettering that says, 'Week Twelve, Packers vs Bears'",
+    "episodeNumber": "12",
+    "url": "https://www.youtube.com/live/oO5TBFoPm5Y",
+    "audio": null,
+    "category": ["Live"],
+    "tags": ["GB Rewind"],
+    "trending": false,
+    "releaseDate": "01/01/1900",
+    "show": "Green Bay Rewind"
+  },
+  {
+    "id": 3014,
+    "title": "2024 Week Fourteen",
+    "mainImg": "2024-week-fourteen.jpg",
+    "mainAlt": "Green background with white lettering that says, 'Week Fourteen, Packers vs Bears'",
+    "episodeNumber": "14",
+    "url": "https://www.youtube.com/watch?v=0UUejJsu2us",
+    "audio": null,
+    "category": ["Live"],
+    "tags": ["GB Rewind"],
+    "trending": false,
+    "releaseDate": "01/01/1900",
+    "show": "Green Bay Rewind"
+  },
+  {
+    "id": 3015,
+    "title": "2024 Week Fifteen",
+    "mainImg": "2024-week-fifteen.jpg",
+    "mainAlt": "Green background with white lettering that says, 'Week Fifteen, Packers vs Seahawks'",
+    "episodeNumber": "15",
+    "url": "https://www.youtube.com/watch?v=gQpFb5WU8CI",
+    "audio": null,
+    "category": ["Live"],
+    "tags": ["GB Rewind"],
+    "trending": false,
+    "releaseDate": "01/01/1900",
+    "show": "Green Bay Rewind"
+  },
+  {
+    "id": 3016,
+    "title": "2024 Week Sixteen",
+    "mainImg": "2024-week-sixteen.jpg",
+    "mainAlt": "Green background with white lettering that says, 'Week Sixteen, Saints vs Packers'",
+    "episodeNumber": "16",
+    "url": "https://www.youtube.com/watch?v=0g_JVKhYpz8",
+    "audio": null,
+    "category": ["Live"],
+    "tags": ["GB Rewind"],
+    "trending": false,
+    "releaseDate": "01/01/1900",
+    "show": "Green Bay Rewind"
+  },
+  {
+    "id": 3017,
+    "title": "2024 Week Seventeen",
+    "mainImg": "2024-week-seventeen.jpg",
+    "mainAlt": "Green background with white lettering that says, 'Week Seventeen, Packers vs Vikings'",
+    "episodeNumber": "14",
+    "url": "https://www.youtube.com/watch?v=LXl6m52dZU4",
+    "audio": null,
+    "category": ["Live"],
+    "tags": ["GB Rewind"],
+    "trending": false,
+    "releaseDate": "01/01/1900",
     "show": "Green Bay Rewind"
   }
 ]

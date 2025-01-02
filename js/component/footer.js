@@ -140,15 +140,15 @@ function buildSocialsAndCopyright() {
       url: "https://www.instagram.com/thegreenbayguy/",
     },
     {
-      alt: "Twitter icon",
-      src: "/assets/icons/twitter.png",
-      url: "https://x.com/TheGreenBayGuy",
+      alt: "Tiktok icon",
+      src: "/assets/icons/tiktok.png",
+      url: "https://www.tiktok.com/@thegbguy",
     },
-    {
-      alt: "Snapchat icon",
-      src: "/assets/icons/snapchat.png",
-      url: "https://www.snapchat.com/add/thegbguy",
-    },
+    // {
+    //   alt: "Snapchat icon",
+    //   src: "/assets/icons/snapchat.png",
+    //   url: "https://www.snapchat.com/add/thegbguy",
+    // },
     {
       alt: "YouTube icon",
       src: "/assets/icons/youtube.png",
