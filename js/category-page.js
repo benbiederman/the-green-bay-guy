@@ -35,12 +35,6 @@ function getData(pagePath) {
   if (pagePath.includes("locals-guide")) {
     contentType = "local's guide";
     return "/data/locals-guides.json";
-  } else if (pagePath.includes("the-green-bay-narrative")) {
-    contentType = "podcast";
-    return "/data/content.json";
-  } else if (pagePath.includes("green-bay-rewind")) {
-    contentType = "podcast";
-    return "/data/content.json";
   }
 }
 
@@ -54,10 +48,6 @@ function setCategory(path) {
     return "Do";
   } else if (path.includes("misc")) {
     return "Misc";
-  } else if (path.includes("the-green-bay-narrative")) {
-    return "Podcast";
-  } else if (path.includes("green-bay-rewind")) {
-    return "Live";
   }
 }
 
