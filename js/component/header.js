@@ -13,8 +13,8 @@ export function buildNavigation() {
       url: "/locals-guide",
     },
     {
-      label: "Content",
-      url: "/content",
+      label: "Collab",
+      url: "/business-inquiries.html",
     },
   ];
 

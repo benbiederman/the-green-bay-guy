@@ -94,6 +94,10 @@ function buildFooterLinks() {
           label: "ben@thegreenbayguy.com",
           url: "mailto:ben@thegreenbayguy.com",
         },
+        {
+          label: "PO Box 28041, Green Bay, WI 54324",
+          url: null,
+        },
       ],
     },
   ];
@@ -119,10 +123,14 @@ function buildFooterLinks() {
       const li = document.createElement("li");
       links.appendChild(li);
 
-      const a = document.createElement("a");
-      a.href = link.url;
-      a.textContent = link.label;
-      li.appendChild(a);
+      if (link.url) {
+        const a = document.createElement("a");
+        a.href = link.url;
+        a.textContent = link.label;
+        li.appendChild(a);
+      } else {
+        li.textContent = link.label;
+      }
     });
   });
 }
