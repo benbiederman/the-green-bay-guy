@@ -920,42 +920,6 @@
     "url": "locals-guide/el-sarape"
   },
   {
-    "id": 1026,
-    "title": "Four Way Bar",
-    "mainImg": "eat/four-way-bar.jpg",
-    "mainAlt": "Four Way Bar boneless wings with fries",
-    "secondaryImg": null,
-    "secondaryAlt": null,
-    "category": ["Eat", "Drink"],
-    "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 5.0,
-    "favorite": false,
-    "address": [
-      {
-        "name": "Four Way Bar",
-        "image": "location/four-way-bar.jpg",
-        "alt": "Four Way Bar storefront",
-        "street": "1801 Riverside Dr.",
-        "city": "Suamico",
-        "state": "WI",
-        "zip": "54173",
-        "website": "https://fourwaybar.com/",
-        "phone": "(920) 434-3704",
-        "hours": [
-          "Closed",
-          "10:00am - 10:00pm",
-          "10:00am - 10:00pm",
-          "10:00am - 10:00pm",
-          "10:00am - 10:00pm",
-          "10:00am - 10:00pm",
-          "9:00am - 9:00pm"
-        ]
-      }
-    ],
-    "distance": 11.3,
-    "url": "locals-guide/four-way-bar-and-restaurant"
-  },
-  {
     "id": 1072,
     "title": "Fox Harbor",
     "mainImg": "eat/fox-harbor.jpg",
