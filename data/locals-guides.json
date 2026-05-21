@@ -2931,5 +2931,41 @@
     ],
     "distance": 14.0,
     "url": "locals-guide/loco-wisco"
+  },
+  {
+    "id": 1083,
+    "title": "Let's Run Around",
+    "mainImg": "do/lets-run-around.jpg",
+    "mainAlt": "Let's Run Around storefront, displaying their logo",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Do"],
+    "tags": ["Entertainment", "$$$"],
+    "rating": null,
+    "favorite": false,
+    "address": [
+      {
+        "name": "Let's Run Around",
+        "image": "location/lets-run-around.jpg",
+        "alt": "Let's Run Around storefront, displaying their logo.",
+        "street": "2605 S Oneida St #123.",
+        "city": "Ashwaubenon",
+        "state": "WI",
+        "zip": "54304",
+        "website": "https://www.letsrunaround.com/",
+        "phone": "(920) 489-7934",
+        "hours": [
+          "08:00am - 8:00pm",
+          "8:00am - 8:00pm",
+          "8:00am - 8:00pm",
+          "8:00am - 8:00pm",
+          "8:00am - 8:00pm",
+          "8:00am - 8:00pm",
+          "8:00am - 8:00pm"
+        ]
+      }
+    ],
+    "distance": 1.8,
+    "url": "locals-guide/lets-run-around"
   }
 ]
