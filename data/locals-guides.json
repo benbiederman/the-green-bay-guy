@@ -2217,42 +2217,6 @@
     "url": "locals-guide/taqueria-maldonados"
   },
   {
-    "id": 1054,
-    "title": "The Abbey",
-    "mainImg": "eat/the-abbey.jpg",
-    "mainAlt": "Buffalo chicken wrap with a side of fries.",
-    "secondaryImg": null,
-    "secondaryAlt": null,
-    "category": ["Eat", "Drink"],
-    "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 8.0,
-    "favorite": false,
-    "address": [
-      {
-        "name": "The Abbey",
-        "image": "location/the-abbey.jpg",
-        "alt": "The Abbey's interior showing their bar.",
-        "street": "303 Reid St.",
-        "city": "De Pere",
-        "state": "WI",
-        "zip": "54115",
-        "website": "https://www.abbeybar.com/",
-        "phone": "(920) 336-7242",
-        "hours": [
-          "11:00am - 12:00am",
-          "4:00pm - 11:30pm",
-          "11:00am - 12:00am",
-          "11:00am - 2:00am",
-          "11:00am - 2:00am",
-          "11:00am - 12:00am",
-          "11:00am - 9:00pm"
-        ]
-      }
-    ],
-    "distance": 5.5,
-    "url": "locals-guide/the-abbey"
-  },
-  {
     "id": 1055,
     "title": "The Bar",
     "mainImg": "eat/the-bar.jpg",
@@ -2967,5 +2931,45 @@
     ],
     "distance": 1.8,
     "url": "locals-guide/lets-run-around"
+  },
+  {
+    "id": 1084,
+    "title": "Foxy Pedaler / Foxy Paddler",
+    "mainImg": "do/foxy-pedaler.jpg",
+    "mainAlt": "The Foxy Pedaler party bike in front of a local business",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Do"],
+    "tags": ["Entertainment", "$$$"],
+    "rating": null,
+    "favorite": false,
+    "address": [
+      {
+        "name": "Foxy Pedaler",
+        "image": "location/foxy-pedaler.jpg",
+        "alt": "An up close view of the Foxy Pedaler bike, showing their logo and website.",
+        "street": "Washington St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304",
+        "website": "https://www.foxypedaler.com/",
+        "phone": "(920) 435-3699",
+        "hours": null
+      },
+      {
+        "name": "Foxy Paddler",
+        "image": "location/foxy-paddler.jpg",
+        "alt": "The Foxy Paddler on the Fox River.",
+        "street": "Washington St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304",
+        "website": "https://www.foxypaddler.com/",
+        "phone": "(920) 489-7934",
+        "hours": null
+      }
+    ],
+    "distance": null,
+    "url": "locals-guide/foxy-pedaler"
   }
 ]
